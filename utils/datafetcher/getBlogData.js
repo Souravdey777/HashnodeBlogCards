@@ -1,10 +1,9 @@
 import axios from 'axios';
-// API URL
-const hashnodeURL = "https://api.hashnode.com/";
+import { HASHNODE_API_URL } from '../Constants';
 
 const getHashnodeBlog = async (slug, hostname) => {
   try {
-    const result = await axios.post(hashnodeURL, {
+    const result = await axios.post(HASHNODE_API_URL, {
       query: `query{
         post(slug:"${slug}",hostname:"${hostname}") {
           author{
