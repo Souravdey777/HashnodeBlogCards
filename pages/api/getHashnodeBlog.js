@@ -1,5 +1,5 @@
 
-import getHashnodeBlog from '../../utils/getBlogData';
+import getHashnodeBlog from '../../utils/datafetcher/getBlogData';
 import blogCard from '../../utils/blogCard';
 
 export default async (req, res) => {

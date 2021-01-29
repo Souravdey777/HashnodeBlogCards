@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import getBase64 from '../utils/getBase64'
+import getBase64 from '../utils/datafetcher/getBase64'
 export default function Home() {
 
   return (

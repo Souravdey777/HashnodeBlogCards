@@ -1,4 +1,4 @@
-import getBase64 from "./getBase64";
+import getBase64 from "./datafetcher/getBase64";
 
 const blogCard = async (data, hostname, large = false, dark = false) => {
   const { title, dateAdded, brief, author, slug } = data
