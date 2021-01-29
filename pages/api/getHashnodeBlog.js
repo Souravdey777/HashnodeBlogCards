@@ -1,6 +1,6 @@
 
 import getHashnodeBlog from '../../utils/getBlogData';
-import hashnodeBlogCard from '../../utils/hashnodeBlogCard';
+import blogCard from '../../utils/blogCard';
 
 export default async (req, res) => {
     try {
@@ -20,7 +20,7 @@ export default async (req, res) => {
             res.end();
             return;
         }
-        const blogCardObj = await hashnodeBlogCard(resultData.data.post, hostname, large, dark);
+        const blogCardObj = await blogCard(resultData.data.post, hostname, large, dark);
         res.writeHead(200, { 'Content-Type': 'image/svg+xml' });
         res.write(blogCardObj);
         res.end();

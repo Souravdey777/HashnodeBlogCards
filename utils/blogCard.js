@@ -1,6 +1,6 @@
 import getBase64 from "./getBase64";
 
-const hashnodeBlogCard = async (data, hostname, large = false, dark = false) => {
+const blogCard = async (data, hostname, large = false, dark = false) => {
   const { title, dateAdded, brief, author, slug } = data
   const coverImage = data.coverImage !== "" ? await getBase64(data.coverImage) : "";
   const profileImage = await getBase64(author.photo);
@@ -88,4 +88,4 @@ const hashnodeBlogCard = async (data, hostname, large = false, dark = false) => 
   </svg > `;
 };
 
-export default hashnodeBlogCard;
+export default blogCard;
