@@ -9,15 +9,15 @@ const hashnodeBlogCard = async (data, hostname, large = false, dark = false) => 
   if (dark === true) {
     return `<svg  ${large ? ` width="302" height="522"` : ` width="174" height="300" `} viewBox="0 0 302 522" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <a href="${blogLink}" target="_blank">
-    <rect x="1" y="1" width="300" height="520" rx="4" fill="#232626" stroke="#AEAEAE" stroke-width="2"/>
+    <rect x="1" y="1" width="300" height="520" rx="4" fill="#232626" stroke="#AEAEAE" stroke-width="1"/>
     <rect id="profileImage" x="16" y="20" width="40" height="40" rx="20" />
     <clipPath id="profileImageClip">
     <use xlink:href="#profileImage"/>
     </clipPath>
     <image x="16" y="20" width="40" height="40" clip-path="url(#profileImageClip)" preserveAspectRatio="xMidYMid slice" xlink:href="data:image/png;base64,${profileImage}"/>
     <text fill="#F5F5F5"  font-family="Helvetica" font-size="14" letter-spacing="0em" x="71" y="38"><tspan font-weight="bold">${author.name}</tspan>
-    <tspan fill="#AEAEAE" fill-opacity="0.75"  font-family="Helvetica" font-weight="bold" font-size="14" letter-spacing="0em">@${author.username}</tspan></text>
-    <text fill="#AEAEAE" fill-opacity="0.75"  font-family="Helvetica" font-size="14" font-weight="bold" letter-spacing="0em"><tspan x="71" y="53.8636">${blogDate}</tspan></text>
+    <tspan fill="#AEAEAE" fill-opacity="0.75"  font-family="Helvetica" font-size="14" ${large ? "" : `font-weight="bold"`} letter-spacing="0em">@${author.username}</tspan></text>
+    <text fill="#AEAEAE" fill-opacity="0.75"  font-family="Helvetica" font-size="14" ${large ? "" : `font-weight="bold"`} letter-spacing="0em"><tspan x="71" y="53.8636">${blogDate}</tspan></text>
     <foreignObject
           x="16" y="80" width="260" height="120">
           <p
@@ -49,7 +49,7 @@ const hashnodeBlogCard = async (data, hostname, large = false, dark = false) => 
   }
   return `<svg  ${large ? ` width="302" height="522"` : ` width="174" height="300" `} viewBox="0 0 302 522" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <a href="${blogLink}" target="_blank">
-  <rect x="1" y="1" width="300" height="520" rx="4" fill="white" stroke="#E5E7EB" stroke-width="2"/>
+  <rect x="1" y="1" width="300" height="520" rx="4" fill="white" stroke="#E5E7EB" stroke-width="1"/>
   <rect id="profileImage" x="16" y="20" width="40" height="40" rx="20" />
   <clipPath id="profileImageClip">
   <use xlink:href="#profileImage"/>
