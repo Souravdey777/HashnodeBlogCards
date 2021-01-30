@@ -1,8 +1,7 @@
-import Head from 'next/head'
-// import Image from 'next/image'
+// import Image from 'next/image';
 import Lottie from "react-lottie";
-import * as animationData from '../assets/blogger.json'
-import styles from '../styles/Home.module.css'
+import * as animationData from '../assets/blogger.json';
+import styles from '../styles/Home.module.css';
 
 export default function Home() {
 
@@ -22,13 +21,19 @@ export default function Home() {
         <title>Hashnode Blog Cards</title>
         <link rel="icon" href="/brand-icon.png" />
       </Head>
-      <Lottie
-        options={defaultOptions}
-        height={300}
-        width={300}
-        isStopped={false}
-        isPaused={false}
-      />
+      <div>
+        <Lottie
+          options={defaultOptions}
+          height={500}
+          width={500}
+          isStopped={false}
+          isPaused={false}
+          isClickToPauseDisabled={true}
+        />
+      </div>
+      <div>
+
+      </div>
 
       {/* <div className="rounded-3xl transform scale-110 -rotate-6 bg-gradient-to-br from-blue-400 to-indigo-500" style={{ width: "200px", height: "200px" }}>hi</div> */}
       <main className={styles.main}>
@@ -40,7 +45,7 @@ export default function Home() {
           <code className={styles.code}>pages/index.js</code>
         </p>
 
-        <div className={styles.grid}>
+        {/* <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
             <h3>Documentation &rarr;</h3>
             <p>Find in-depth information about Next.js features and API.</p>
@@ -68,7 +73,7 @@ export default function Home() {
               Instantly deploy your Next.js site to a public URL with Vercel.
             </p>
           </a>
-        </div>
+        </div> */}
       </main>
 
       <footer className={styles.footer}>

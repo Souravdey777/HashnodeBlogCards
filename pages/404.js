@@ -1,5 +1,6 @@
 import * as animationData from '../assets/404.json';
 import Lottie from "react-lottie";
+import styles from '../styles/Error.module.css';
 
 export default function Custom404() {
     const defaultOptions = {
@@ -10,18 +11,23 @@ export default function Custom404() {
             preserveAspectRatio: "xMidYMid slice"
         }
     };
-    return <div className="h-screen flex flex-row">
-        <div className="m-auto">
+    return <div className={styles.errorContainer}>
+        <div className={styles.animationContainer}>
             <Lottie
                 options={defaultOptions}
-                height={600}
-                width={600}
+                height={300}
+                width={300}
                 isStopped={false}
                 isPaused={false}
+                isClickToPauseDisabled={true}
             />
         </div>
 
-        <div className="flex justify-start font items-center w-full font-extrabold">404</div>
+        <div className={styles.textContainer}>
+            <div className={styles.headingText}>404</div>
+            <div className={styles.subheadingText}>It looks like you're lost...</div>
+            <a href="https://hashnode-blog-cards.souravdey777.vercel.app/" className={styles.link}>🚀 GO TO HOMEPAGE &rarr;</a>
+        </div>
 
     </div>
 }
