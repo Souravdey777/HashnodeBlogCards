@@ -1,24 +1,40 @@
 import Head from 'next/head'
-import Image from 'next/image'
+// import Image from 'next/image'
+import Lottie from "react-lottie";
+import * as animationData from '../assets/blogger.json'
 import styles from '../styles/Home.module.css'
-import getBase64 from '../utils/datafetcher/getBase64'
+
 export default function Home() {
 
+  // const [URL, setURL] = useState("http://localhost:3000/api/getHashnodeBlog");
+
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animationData.default,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice"
+    }
+  };
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <title>Hashnode Blog Cards</title>
+        <link rel="icon" href="/brand-icon.png" />
       </Head>
-      {/* <Image width="500px" height="500px" src="" /> */}
+      <Lottie
+        options={defaultOptions}
+        height={300}
+        width={300}
+        isStopped={false}
+        isPaused={false}
+      />
+
+      {/* <div className="rounded-3xl transform scale-110 -rotate-6 bg-gradient-to-br from-blue-400 to-indigo-500" style={{ width: "200px", height: "200px" }}>hi</div> */}
       <main className={styles.main}>
         <h1 className={styles.title}>
           Welcome to <a href="https://nextjs.org">Next.js!</a>
         </h1>
-        <img
-          src="https://hashnode-blog-cards.vercel.app/api/getHashnodeBlog?url=https://blog.larsbehrenberg.com/use-javascripts-fetch-api-with-asyncawait-to-fetch-your-instagram-feed-in-react&large=true&dark=true"
-          alt="Picture of the author"
-        />
         <p className={styles.description}>
           Get started by editing{' '}
           <code className={styles.code}>pages/index.js</code>
@@ -65,6 +81,6 @@ export default function Home() {
           <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
         </a>
       </footer>
-    </div>
+    </div >
   )
 }
