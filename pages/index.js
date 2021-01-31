@@ -1,7 +1,8 @@
-// import Image from 'next/image';
+import Image from 'next/image';
 import Lottie from "react-lottie";
 import * as animationData from '../assets/blogger.json';
 import styles from '../styles/Home.module.css';
+// import logo from '../assets/brand-full.png'
 
 export default function Home() {
 
@@ -17,14 +18,24 @@ export default function Home() {
   };
   return (
     <main className={styles.main}>
+      <nav>
+        {/* <div className={styles.logo}> */}
+        {/* <img src={logo}
+            width={500}
+            height={500}
+          /> */}
+        {/* </div> */}
+      </nav>
       <div className={styles.appIntro}>
         <div className={styles.appIntroText}>
+
+          {/* <Image src="/../assets/brand-full.min.svg" width="200" height="100" /> */}
           <h1 className={styles.title}>
             Welcome to hashnode <span>Blog Cards</span>
           </h1>
           <p className={styles.description}>
-            Get started by editing{' '}
-            {/* <code className={styles.code}>pages/index.js</code> */}
+            Blog 🔗 links are not enough, Give your blogs what they deserve with{' '}
+            <span className={styles.code}>Blog Cards ✨</span>
           </p>
         </div>
         <div>
