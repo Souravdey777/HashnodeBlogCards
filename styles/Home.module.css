@@ -7,6 +7,7 @@
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Noto Color Emoji";
   background-color: rgba(245, 247, 250, 1);
+  /* background-color: linear-gradient(0deg, blue, rgba(245, 247, 250, 1)); */
 }
 
 .appIntro {
@@ -15,7 +16,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
   color: #424242;
   /* border-bottom: #2962ff 0.01rem solid; */
 }
@@ -71,9 +72,9 @@
   color: #2962ff;
 }
 
-.appCards {
+.appCards,
+.appCardsCommingSoon {
   padding: 0rem 1rem;
-  min-height: 100vh;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -81,37 +82,43 @@
   color: #424242;
 }
 
+.appCards {
+  min-height: 100vh;
+  /* background-color: black;
+  color: #cccccc; */
+}
+
 .appCardsDiv {
   margin: 2rem;
+  min-width: 300px;
   border-radius: 10px;
-  line-height: 1.15;
-  font-size: 2.5rem;
   display: flex;
   flex-direction: column;
 }
 
 .appCardsDiv img {
-  height: 522px;
-  width: 300px;
+  height: 500px;
   margin-top: 1rem;
 }
 
-.appCardsText1 {
+.appCardsText1,
+.appCardsText2,
+.appCardsText3 {
   font-weight: 900;
+  line-height: 1.15;
+  font-size: 2rem;
+}
+
+.appCardsText1 {
   color: #cccccc;
-  -webkit-text-stroke-width: 0.5px;
 }
 
 .appCardsText2 {
-  font-weight: 900;
   color: #232626;
-  -webkit-text-stroke-width: 0.5px;
 }
 
 .appCardsText3 {
-  font-weight: 900;
   color: #2962ff;
-  -webkit-text-stroke-width: 0.5px;
 }
 
 .grid {
