@@ -17,10 +17,6 @@ export default function Home() {
   };
   return (
     <div className={styles.container}>
-      <Head>
-        <title>Hashnode Blog Cards</title>
-        <link rel="icon" href="/brand-icon.png" />
-      </Head>
       <div>
         <Lottie
           options={defaultOptions}
