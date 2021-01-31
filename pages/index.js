@@ -2,6 +2,7 @@
 import Lottie from "react-lottie";
 import * as animationData from '../assets/blogger.json';
 import styles from '../styles/Home.module.css';
+inport Head from 'next/head'
 
 export default function Home() {
 
