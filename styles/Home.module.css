@@ -10,13 +10,14 @@
 }
 
 .appIntro {
-  padding: 4rem 1rem;
+  padding: 0rem 1rem;
   min-height: 100vh;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
   color: #424242;
+  /* border-bottom: #2962ff 0.01rem solid; */
 }
 
 .appIntroText {
@@ -44,21 +45,26 @@
   text-decoration: underline;
 } */
 
+.title,
+.description,
+.subHeading {
+  text-align: start;
+}
+
 .title {
   margin: 0;
   line-height: 1.15;
   font-size: 5rem;
   font-weight: 900;
 }
-
-.title,
-.description {
-  text-align: start;
-}
-
 .description {
   line-height: 1.5;
   font-size: 1.2rem;
+}
+
+.subHeading {
+  line-height: 1.5;
+  font-size: 1rem;
 }
 
 .code {
@@ -66,7 +72,7 @@
 }
 
 .appCards {
-  padding: 4rem 1rem;
+  padding: 0rem 1rem;
   min-height: 100vh;
   display: flex;
   flex-flow: row wrap;
@@ -75,36 +81,36 @@
   color: #424242;
 }
 
-.appCardsText1,
-.appCardsText2,
-.appCardsText3 {
-  margin: 1rem;
+.appCardsDiv {
+  margin: 2rem;
+  border-radius: 10px;
   line-height: 1.15;
-  font-size: 2rem;
-  font-weight: 900;
+  font-size: 2.5rem;
   display: flex;
   flex-direction: column;
 }
 
-.appCardsText1 img,
-.appCardsText2 img,
-.appCardsText3 img {
+.appCardsDiv img {
+  height: 522px;
+  width: 300px;
   margin-top: 1rem;
 }
 
 .appCardsText1 {
+  font-weight: 900;
   color: white;
   -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: #444;
+  -webkit-text-stroke-color: #000;
 }
 
 .appCardsText2 {
+  font-weight: 900;
   color: #232626;
   -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: #aeaeae;
 }
 
 .appCardsText3 {
+  font-weight: 900;
   color: #2962ff;
   -webkit-text-stroke-width: 0.5px;
 }
@@ -152,7 +158,7 @@
   height: 1em;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 769px) {
   .appIntro {
     flex-direction: column;
   }
@@ -161,6 +167,6 @@
     text-align: center;
   }
   .title {
-    font-size: 3rem;
+    font-size: 3.5rem;
   }
 }

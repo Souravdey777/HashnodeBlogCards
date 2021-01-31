@@ -2,7 +2,7 @@ import Image from 'next/image';
 import Lottie from "react-lottie";
 import * as animationData from '../assets/blogger.json';
 import styles from '../styles/Home.module.css';
-// import logo from '../assets/brand-full.png'
+// import logo from '../assets/brand-full.png';
 
 export default function Home() {
 
@@ -21,9 +21,9 @@ export default function Home() {
       <nav>
         {/* <div className={styles.logo}> */}
         {/* <img src={logo}
-            width={500}
-            height={500}
-          /> */}
+          width={500}
+          height={500}
+        /> */}
         {/* </div> */}
       </nav>
       <div className={styles.appIntro}>
@@ -51,16 +51,19 @@ export default function Home() {
       </div>
       <div className={styles.appCards}>
 
-        <div className={styles.appCardsText1}>
-          Light Theme
+        <div className={styles.appCardsDiv}>
+          <div className={styles.appCardsText1}>Light Theme</div>
+          <p className={styles.subHeading}>This light theme of Blog Cards </p>
           <img src="https://hashnode-blog-cards.vercel.app/api/getHashnodeBlog?url=https://blog.larsbehrenberg.com/use-javascripts-fetch-api-with-asyncawait-to-fetch-your-instagram-feed-in-react&large=true" />
         </div>
-        <div className={styles.appCardsText2}>
-          Dark Theme
+        <div className={styles.appCardsDiv}>
+          <div className={styles.appCardsText2}>Dark Theme</div>
+          <p className={styles.subHeading}>This light theme of Blog Cards </p>
           <img src="https://hashnode-blog-cards.vercel.app/api/getHashnodeBlog?url=https://blog.larsbehrenberg.com/use-javascripts-fetch-api-with-asyncawait-to-fetch-your-instagram-feed-in-react&large=true&dark=true" />
         </div>
-        <div className={styles.appCardsText3}>
-          Blue Theme
+        <div className={styles.appCardsDiv}>
+          <div className={styles.appCardsText3}>Blue Theme</div>
+          <p className={styles.subHeading}>This light theme of Blog Cards </p>
           <img src="https://hashnode-blog-cards.vercel.app/api/getHashnodeBlog?url=https://blog.larsbehrenberg.com/use-javascripts-fetch-api-with-asyncawait-to-fetch-your-instagram-feed-in-react&large=true" />
         </div>
       </div>

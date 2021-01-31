@@ -54,7 +54,7 @@
   background-color: #2962ff;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 769px) {
   .errorContainer {
     flex-direction: column;
   }
