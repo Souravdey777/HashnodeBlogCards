@@ -47,7 +47,8 @@
 .title {
   margin: 0;
   line-height: 1.15;
-  font-size: 4rem;
+  font-size: 5rem;
+  font-weight: 900;
 }
 
 .title,
@@ -62,10 +63,50 @@
 
 .code {
   color: #2962ff;
-  font-weight: bold;
 }
 
-.code {
+.appCards {
+  padding: 4rem 1rem;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-evenly;
+  color: #424242;
+}
+
+.appCardsText1,
+.appCardsText2,
+.appCardsText3 {
+  margin: 1rem;
+  line-height: 1.15;
+  font-size: 2rem;
+  font-weight: 900;
+  display: flex;
+  flex-direction: column;
+}
+
+.appCardsText1 img,
+.appCardsText2 img,
+.appCardsText3 img {
+  margin-top: 1rem;
+}
+
+.appCardsText1 {
+  color: white;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #444;
+}
+
+.appCardsText2 {
+  color: #232626;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #aeaeae;
+}
+
+.appCardsText3 {
+  color: #2962ff;
+  -webkit-text-stroke-width: 0.5px;
 }
 
 .grid {
@@ -118,5 +159,8 @@
   .title,
   .description {
     text-align: center;
+  }
+  .title {
+    font-size: 3rem;
   }
 }

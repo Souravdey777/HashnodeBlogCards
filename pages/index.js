@@ -30,11 +30,11 @@ export default function Home() {
         <div className={styles.appIntroText}>
 
           {/* <Image src="/../assets/brand-full.min.svg" width="200" height="100" /> */}
-          <h1 className={styles.title}>
+          <div className={styles.title}>
             Welcome to hashnode <span>Blog Cards</span>
-          </h1>
+          </div>
           <p className={styles.description}>
-            Blog 🔗 links are not enough, Give your blogs what they deserve with{' '}
+            Blog links 🔗 are not enough, Give your blogs what it deserves with{' '}
             <span className={styles.code}>Blog Cards 🔥</span>
           </p>
         </div>
@@ -47,6 +47,21 @@ export default function Home() {
             isPaused={false}
             isClickToPauseDisabled={true}
           />
+        </div>
+      </div>
+      <div className={styles.appCards}>
+
+        <div className={styles.appCardsText1}>
+          Light Theme
+          <img src="https://hashnode-blog-cards.vercel.app/api/getHashnodeBlog?url=https://blog.larsbehrenberg.com/use-javascripts-fetch-api-with-asyncawait-to-fetch-your-instagram-feed-in-react&large=true" />
+        </div>
+        <div className={styles.appCardsText2}>
+          Dark Theme
+          <img src="https://hashnode-blog-cards.vercel.app/api/getHashnodeBlog?url=https://blog.larsbehrenberg.com/use-javascripts-fetch-api-with-asyncawait-to-fetch-your-instagram-feed-in-react&large=true&dark=true" />
+        </div>
+        <div className={styles.appCardsText3}>
+          Blue Theme
+          <img src="https://hashnode-blog-cards.vercel.app/api/getHashnodeBlog?url=https://blog.larsbehrenberg.com/use-javascripts-fetch-api-with-asyncawait-to-fetch-your-instagram-feed-in-react&large=true" />
         </div>
       </div>
 
