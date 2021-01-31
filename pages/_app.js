@@ -1,5 +1,6 @@
 import '../styles/globals.css'
 import Head from 'next/head';
+import styles from '../styles/Home.module.css';
 
 function MyApp({ Component, pageProps }) {
   return <>
@@ -9,16 +10,14 @@ function MyApp({ Component, pageProps }) {
       <script async defer data-domain="hashnode-blog-cards.souravdey777.vercel.app" src="https://plausible.io/js/plausible.js"></script>
     </Head>
     <Component {...pageProps} />
-    {/* <footer className="footer">
-      <a
-        href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-        target="_blank"
-        rel="noopener noreferrer"
-      >
-        Powered by{' '}
-        <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-      </a>
-    </footer> */}
+    <footer className="footer">
+      {/* <div className="footer_upper">
+        Sourav Dey
+      </div> */}
+      <div className="footer_lower">
+        © 2021 hashnode Blog Cards
+      </div>
+    </footer>
   </>
 }
 
