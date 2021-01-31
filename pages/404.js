@@ -12,10 +12,6 @@ export default function Custom404() {
         }
     };
     return <div className={styles.errorContainer}>
-        <Head>
-            <title>Hashnode Blog Cards</title>
-            <link rel="icon" href="/brand-icon.png" />
-        </Head>
         <div className={styles.animationContainer}>
             <Lottie
                 options={defaultOptions}
