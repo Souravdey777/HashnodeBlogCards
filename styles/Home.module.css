@@ -98,9 +98,8 @@
 
 .appCardsText1 {
   font-weight: 900;
-  color: white;
+  color: #cccccc;
   -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: #000;
 }
 
 .appCardsText2 {
