@@ -35,7 +35,7 @@ export default function Home() {
           </h1>
           <p className={styles.description}>
             Blog 🔗 links are not enough, Give your blogs what they deserve with{' '}
-            <span className={styles.code}>Blog Cards ✨</span>
+            <span className={styles.code}>Blog Cards 🔥</span>
           </p>
         </div>
         <div>
