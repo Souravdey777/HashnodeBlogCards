@@ -79,7 +79,7 @@ export default function Home() {
           <img src="https://hashnode-blog-cards.vercel.app/api/getHashnodeBlog?url=https://blog.larsbehrenberg.com/use-javascripts-fetch-api-with-asyncawait-to-fetch-your-instagram-feed-in-react" />
         </div>
         <div className={styles.appCardsDiv}>
-          <div className={styles.appCardsText2}>🌙 Dark Theme</div>
+          <div className={styles.appCardsText2}>🌚 Dark Theme</div>
           <p className={styles.subHeading}>This light theme of Blog Cards </p>
           <img src="https://hashnode-blog-cards.vercel.app/api/getHashnodeBlog?url=https://blog.larsbehrenberg.com/use-javascripts-fetch-api-with-asyncawait-to-fetch-your-instagram-feed-in-react&dark=true" />
         </div>
