@@ -17,7 +17,7 @@ export default async (req, res) => {
             return;
         }
         const large = req.query.large === "true" ? true : false;
-        const dark = req.query.dark === "true" ? true : false;
+        const theme = req.query.theme
         const { username, sequence } = req.query;
         var sequenceBy6 = sequence % 6;
         sequenceBy6 = sequenceBy6 === 0 ? 6 : sequenceBy6;
@@ -32,7 +32,7 @@ export default async (req, res) => {
             resultData.data.user.publication.posts[sequenceBy6 - 1],
             resultData.data.user.publicationDomain,
             large,
-            dark
+            theme
         );
         res.writeHead(200, { "Content-Type": "image/svg+xml" });
         res.write(blogCardObj);

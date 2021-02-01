@@ -21,7 +21,7 @@ export default async (req, res) => {
             }
         }
         const large = req.query.large === "true" ? true : false;
-        const dark = req.query.dark === "true" ? true : false;
+        const theme = req.query.theme
         const resultData = await getLatestHashnodeBlog(username);
         if (!resultData.data.user.publication.posts.length) {
             res.write(JSON.stringify({ error: "Post does not exits!" }));
@@ -40,7 +40,7 @@ export default async (req, res) => {
                     blog,
                     resultData.data.user.publicationDomain,
                     large,
-                    dark
+                    theme
                 );
                 result += `<svg x="${index * (large ? 304 : 176)
                     }" y="0">${blogCardObj}</svg>`;

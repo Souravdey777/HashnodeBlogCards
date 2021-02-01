@@ -11,7 +11,7 @@ export default async (req, res) => {
         var { hostname, pathname } = new URL(req.query.url);
         const slug = pathname.replace("/", "");
         const large = req.query.large === "true" ? true : false;
-        const dark = req.query.dark === "true" ? true : false;
+        const theme = req.query.theme
         const resultData = await getHashnodeBlog(slug, hostname);
         if (!resultData.data.post) {
             res.write(JSON.stringify({ error: "Post does not exits!" }));
@@ -22,7 +22,7 @@ export default async (req, res) => {
             resultData.data.post,
             hostname,
             large,
-            dark
+            theme
         );
         res.writeHead(200, { "Content-Type": "image/svg+xml" });
         res.write(blogCardObj);
