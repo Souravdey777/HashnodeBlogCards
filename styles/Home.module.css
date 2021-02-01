@@ -15,7 +15,7 @@
   padding: 0rem 5rem;
   min-height: 100vh;
   display: flex;
-  flex-flow: row wrap-reverse;
+  flex-flow: row wrap;
   align-items: center;
   justify-content: space-evenly;
   color: #424242;
