@@ -1,4 +1,4 @@
-import Image from 'next/image';
+// import Image from 'next/image';
 import Lottie from "react-lottie";
 import * as blogger from '../assets/blogger.json';
 import * as coomingsoon from '../assets/flying.json';
@@ -7,7 +7,7 @@ import React, { useState } from 'react';
 
 export default function Home() {
 
-  const [Endpoint, setEndpoint] = useState("getHashnodeBlog");
+  const [Endpoint, setEndpoint] = useState(0);
 
   const bloggerdefaultOptions = {
     loop: true,
@@ -25,21 +25,16 @@ export default function Home() {
       preserveAspectRatio: "xMidYMid slice"
     }
   };
+
   return (
     <main className={styles.main}>
-      <nav>
-        {/* <div className={styles.logo}> */}
-        {/* <img src={logo}
-          width={500}
-          height={500}
-        /> */}
-        {/* </div> */}
+      <nav className={styles.navHeader}>
+        <img src="/brand-full.png" className={styles.navlogo} />
+        {' '}
+        <div>Blog Cards</div>
       </nav>
       <div className={styles.appIntro}>
         <div className={styles.appIntroText}>
-
-          {/* <Image src="/../assets/brand-full.min.svg" width="200" height="100" /> */}
-
           <img src="/hashnode-logo.png" className={styles.logo} />
           <div className={styles.title}>
             Welcome to hashnode <span>Blog Cards</span>
@@ -63,15 +58,15 @@ export default function Home() {
 
       <div className={styles.apiPlayGround}>
         <div className={styles.apis}>
-          <div onClick={() => setEndpoint("getHashnodeBlog")}>/getHashnodeBlog</div>
-          <div onClick={() => setEndpoint("getHashnodeBlogBySequence")}>/getHashnodeBlogBySequence</div>
-          <div onClick={() => setEndpoint("getLatestHashnodeBlog")}>/getLatestHashnodeBlog</div>
+          <div className={styles.apiPlayGroundHeader}>🍺 APIs Playground</div>
+          <div onClick={() => setEndpoint(0)} className={Endpoint === 0 ? styles.apibuttonActive : styles.apibutton}>/getHashnodeBlog</div>
+          <div onClick={() => setEndpoint(1)} className={Endpoint === 1 ? styles.apibuttonActive : styles.apibutton}>/getHashnodeBlogBySequence</div>
+          <div onClick={() => setEndpoint(2)} className={Endpoint === 2 ? styles.apibuttonActive : styles.apibutton}>/getLatestHashnodeBlog</div>
         </div>
-        {/* <div>
-          {}
-        </div> */}
+        <div>
+          {Endpoint}
+        </div>
       </div>
-      {/* <p className={styles.subHeading}>A list of the amazing Themes</p> */}
       <div className={styles.appCards}>
         <div className={styles.appCardsDiv}>
           <div className={styles.appCardsText1}>🌞 Light Theme</div>

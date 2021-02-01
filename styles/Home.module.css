@@ -24,6 +24,38 @@
 
 .apiPlayGround {
   justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.apibutton,
+.apibuttonActive,
+.apiPlayGroundHeader {
+  width: 300px;
+  color: #424242;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.8rem;
+  margin: 0.8rem 0rem;
+  border-radius: 10px;
+}
+
+.apibutton:hover,
+.apibuttonActive:hover {
+  /* color: #2962ff; */
+  background-color: white;
+}
+
+.apibuttonActive {
+  color: #2962ff;
+  /* color: rgba(245, 247, 250, 1); */
+}
+
+.apiPlayGroundHeader {
+  background-color: #2962ff;
+  color: rgba(245, 247, 250, 1);
+  font-weight: 900;
+  font-size: 1.2rem;
+  text-align: center;
 }
 
 .appIntroText {
@@ -112,48 +144,28 @@
   color: #2962ff;
 }
 
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-  margin-top: 3rem;
-}
-
-.card {
-  margin: 1rem;
-  flex-basis: 45%;
-  padding: 1.5rem;
-  text-align: left;
-  color: inherit;
-  text-decoration: none;
-  border: 1px solid #eaeaea;
-  border-radius: 10px;
-  transition: color 0.15s ease, border-color 0.15s ease;
-}
-
-.card:hover,
-.card:focus,
-.card:active {
-  color: #2962ff;
-  border-color: #2962ff;
-}
-
-.card h3 {
-  margin: 0 0 1rem 0;
-  font-size: 1.5rem;
-}
-
-.card p {
-  margin: 0;
-  font-size: 1.25rem;
-  line-height: 1.5;
-}
-
 .logo {
   height: 5em;
   margin: 1rem 0rem;
+}
+
+.navHeader {
+  position: fixed;
+  z-index: 100;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  padding: 0.6rem 5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #2962ff;
+  background-color: rgba(245, 247, 250, 0.15);
+  backdrop-filter: blur(10px);
+  box-shadow: 2px 0px 15px #23262622;
+}
+
+.navlogo {
+  width: 7rem;
 }
 
 @media (max-width: 769px) {
@@ -173,7 +185,7 @@
   .appIntro,
   .apiPlayGround,
   .appCards {
-    padding: 2rem 1rem;
+    padding: 5rem 1rem;
   }
   .appCardsCommingSoon {
     padding: 0rem;
@@ -181,5 +193,9 @@
   }
   .logo {
     height: 3em;
+    margin: 0rem;
+  }
+  .navHeader {
+    padding: 0.6rem;
   }
 }
