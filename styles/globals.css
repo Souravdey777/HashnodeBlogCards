@@ -39,5 +39,6 @@ a {
   .footer_lower,
   .footer_upper {
     padding: 1rem;
+    font-size: 0.8rem;
   }
 }
