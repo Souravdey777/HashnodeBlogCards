@@ -1,17 +1,26 @@
 import Image from 'next/image';
 import Lottie from "react-lottie";
-import * as animationData from '../assets/blogger.json';
+import * as blogger from '../assets/blogger.json';
+import * as coomingsoon from '../assets/coomingsoon.json';
 import styles from '../styles/Home.module.css';
 import React, { useState } from 'react';
 
 export default function Home() {
 
-  const [URL, setURL] = useState("http://localhost:3000/api/getHashnodeBlog");
+  const [Endpoint, setEndpoint] = useState("getHashnodeBlog");
 
-  const defaultOptions = {
+  const bloggerdefaultOptions = {
     loop: true,
     autoplay: true,
-    animationData: animationData.default,
+    animationData: blogger.default,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice"
+    }
+  };
+  const coomingsoondefaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: coomingsoon.default,
     rendererSettings: {
       preserveAspectRatio: "xMidYMid slice"
     }
@@ -40,7 +49,7 @@ export default function Home() {
         </div>
         <div>
           <Lottie
-            options={defaultOptions}
+            options={bloggerdefaultOptions}
             height={320}
             width={320}
             isStopped={false}
@@ -49,20 +58,31 @@ export default function Home() {
           />
         </div>
       </div>
+
+      <div className={styles.playGround}>
+        <div className={styles.appIntroText}>
+          <div onClick={() => setEndpoint("getHashnodeBlog")}>/getHashnodeBlog</div>
+          <div onClick={() => setEndpoint("getHashnodeBlogBySequence")}>/getHashnodeBlogBySequence</div>
+          <div onClick={() => setEndpoint("getLatestHashnodeBlog")}>/getLatestHashnodeBlog</div>
+        </div>
+        {/* <div>
+          {}
+        </div> */}
+      </div>
       {/* <p className={styles.subHeading}>A list of the amazing Themes</p> */}
       <div className={styles.appCards}>
         <div className={styles.appCardsDiv}>
-          <div className={styles.appCardsText1}># Light Theme 🌞</div>
+          <div className={styles.appCardsText1}>🌞 Light Theme</div>
           <p className={styles.subHeading}>This light theme of Blog Cards </p>
           <img src="https://hashnode-blog-cards.vercel.app/api/getHashnodeBlog?url=https://blog.larsbehrenberg.com/use-javascripts-fetch-api-with-asyncawait-to-fetch-your-instagram-feed-in-react" />
         </div>
         <div className={styles.appCardsDiv}>
-          <div className={styles.appCardsText2}># Dark Theme 🌙</div>
+          <div className={styles.appCardsText2}>🌙 Dark Theme</div>
           <p className={styles.subHeading}>This light theme of Blog Cards </p>
           <img src="https://hashnode-blog-cards.vercel.app/api/getHashnodeBlog?url=https://blog.larsbehrenberg.com/use-javascripts-fetch-api-with-asyncawait-to-fetch-your-instagram-feed-in-react&dark=true" />
         </div>
         <div className={styles.appCardsDiv}>
-          <div className={styles.appCardsText3}># Blue Theme 💧</div>
+          <div className={styles.appCardsText3}>💧 Blue Theme</div>
           <p className={styles.subHeading}>This light theme of Blog Cards </p>
           <img src="https://hashnode-blog-cards.vercel.app/api/getHashnodeBlog?url=https://blog.larsbehrenberg.com/use-javascripts-fetch-api-with-asyncawait-to-fetch-your-instagram-feed-in-react" />
         </div>
@@ -77,7 +97,7 @@ export default function Home() {
         </div>
         <div>
           <Lottie
-            options={defaultOptions}
+            options={coomingsoondefaultOptions}
             height={320}
             width={320}
             isStopped={false}

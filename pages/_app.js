@@ -11,11 +11,19 @@ function MyApp({ Component, pageProps }) {
     </Head>
     <Component {...pageProps} />
     <footer className="footer">
-      {/* <div className="footer_upper">
-        Sourav Dey
-      </div> */}
+      <div className="footer_upper">
+        <div>hashnode Blog Cards</div>
+        <div>Sourav Dey</div>
+        <div>Newsletter</div>
+        <div>feedback form</div>
+      </div>
       <div className="footer_lower">
-        © 2021 hashnode Blog Cards
+        <div>
+          © 2021 hashnode Blog Cards
+        </div>
+        {/* <div>
+          
+        </div> */}
       </div>
     </footer>
   </>

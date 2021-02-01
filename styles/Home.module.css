@@ -10,8 +10,9 @@
   /* background-color: linear-gradient(0deg, blue, rgba(245, 247, 250, 1)); */
 }
 
-.appIntro {
-  padding: 0rem 1rem;
+.appIntro,
+.playGround {
+  padding: 0rem 5rem;
   min-height: 100vh;
   display: flex;
   flex-direction: row;
@@ -21,35 +22,24 @@
   /* border-bottom: #2962ff 0.01rem solid; */
 }
 
+.playGround {
+  justify-content: flex-start;
+}
+
 .appIntroText {
   max-width: 480px;
 }
-/* 
-.footer img {
-  margin-left: 0.5rem;
-}
-
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
 
 .title span {
   color: #2962ff;
   text-decoration: none;
 }
 
-/* .title a:hover,
-.title a:focus,
-.title a:active {
-  text-decoration: underline;
-} */
-
 .title,
 .description,
 .subHeading {
   text-align: start;
+  font-weight: bold;
 }
 
 .title {
@@ -89,15 +79,16 @@
 }
 
 .appCardsDiv {
-  margin: 2rem;
+  margin: 2rem 0rem;
   min-width: 300px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
 
 .appCardsDiv img {
-  height: 500px;
+  height: 510px;
   margin-top: 1rem;
 }
 
@@ -110,7 +101,7 @@
 }
 
 .appCardsText1 {
-  color: #cccccc;
+  color: #afafaf;
 }
 
 .appCardsText2 {
@@ -174,5 +165,8 @@
   }
   .title {
     font-size: 3.5rem;
+  }
+  .appCardsDiv {
+    align-items: center;
   }
 }

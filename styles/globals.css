@@ -29,6 +29,10 @@ a {
   color: white;
   padding: 1rem 5rem;
 }
+.footer_upper {
+  color: #232326;
+  padding: 1rem 5rem;
+}
 
 @media (max-width: 769px) {
   .footer_lower {
