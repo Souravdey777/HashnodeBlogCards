@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Lottie from "react-lottie";
 import * as blogger from '../assets/blogger.json';
-import * as coomingsoon from '../assets/rocket.json';
+import * as coomingsoon from '../assets/flying.json';
 import styles from '../styles/Home.module.css';
 import React, { useState } from 'react';
 
