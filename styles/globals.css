@@ -26,16 +26,18 @@ a {
 
 .footer_lower {
   background-color: #232326;
-  color: white;
+  color: #eaeaea;
   padding: 1rem 5rem;
 }
 .footer_upper {
-  color: #232326;
+  color: #eaeaea;
   padding: 1rem 5rem;
+  background-color: #2962ff;
 }
 
 @media (max-width: 769px) {
-  .footer_lower {
+  .footer_lower,
+  .footer_upper {
     padding: 1rem;
   }
 }

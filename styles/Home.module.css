@@ -15,7 +15,7 @@
   padding: 0rem 5rem;
   min-height: 100vh;
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap-reverse;
   align-items: center;
   justify-content: space-evenly;
   color: #424242;
@@ -62,12 +62,19 @@
   color: #2962ff;
 }
 
-.appCards,
-.appCardsCommingSoon {
+.appCards {
   padding: 0rem 5rem;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
+  justify-content: space-evenly;
+  color: #424242;
+}
+
+.appCardsCommingSoon {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
   justify-content: space-evenly;
   color: #424242;
 }
@@ -157,9 +164,6 @@
 }
 
 @media (max-width: 769px) {
-  .appIntro {
-    flex-direction: column;
-  }
   .title,
   .description {
     text-align: center;
@@ -175,8 +179,7 @@
   }
   .appIntro,
   .apiPlayGround,
-  .appCards,
-  .appCardsCommingSoon {
+  .appCards {
     padding: 2rem 1rem;
   }
   .logo {

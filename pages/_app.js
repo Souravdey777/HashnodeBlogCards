@@ -15,11 +15,11 @@ function MyApp({ Component, pageProps }) {
         <div>hashnode Blog Cards</div>
         <div>Sourav Dey</div>
         <div>Newsletter</div>
-        <div>feedback form</div>
+        <div>Feedback</div>
       </div>
       <div className="footer_lower">
         <div>
-          © 2021 hashnode Blog Cards
+          Copyright © {(new Date).getFullYear()} hashnode Blog Cards
         </div>
         {/* <div>
           
