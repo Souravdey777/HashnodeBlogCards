@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Lottie from "react-lottie";
 import * as blogger from '../assets/blogger.json';
-import * as coomingsoon from '../assets/coomingsoon.json';
+import * as coomingsoon from '../assets/rocket.json';
 import styles from '../styles/Home.module.css';
 import React, { useState } from 'react';
 
@@ -39,6 +39,8 @@ export default function Home() {
         <div className={styles.appIntroText}>
 
           {/* <Image src="/../assets/brand-full.min.svg" width="200" height="100" /> */}
+
+          <img src="/hashnode-logo.png" className={styles.logo} />
           <div className={styles.title}>
             Welcome to hashnode <span>Blog Cards</span>
           </div>
@@ -59,8 +61,8 @@ export default function Home() {
         </div>
       </div>
 
-      <div className={styles.playGround}>
-        <div className={styles.appIntroText}>
+      <div className={styles.apiPlayGround}>
+        <div className={styles.apis}>
           <div onClick={() => setEndpoint("getHashnodeBlog")}>/getHashnodeBlog</div>
           <div onClick={() => setEndpoint("getHashnodeBlogBySequence")}>/getHashnodeBlogBySequence</div>
           <div onClick={() => setEndpoint("getLatestHashnodeBlog")}>/getLatestHashnodeBlog</div>

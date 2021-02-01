@@ -11,7 +11,7 @@
 }
 
 .appIntro,
-.playGround {
+.apiPlayGround {
   padding: 0rem 5rem;
   min-height: 100vh;
   display: flex;
@@ -22,7 +22,7 @@
   /* border-bottom: #2962ff 0.01rem solid; */
 }
 
-.playGround {
+.apiPlayGround {
   justify-content: flex-start;
 }
 
@@ -64,7 +64,7 @@
 
 .appCards,
 .appCardsCommingSoon {
-  padding: 0rem 1rem;
+  padding: 0rem 5rem;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -152,7 +152,8 @@
 }
 
 .logo {
-  height: 1em;
+  height: 5em;
+  margin: 1rem 0rem;
 }
 
 @media (max-width: 769px) {
@@ -163,10 +164,22 @@
   .description {
     text-align: center;
   }
+  .appIntroText {
+    text-align: center;
+  }
   .title {
     font-size: 3.5rem;
   }
   .appCardsDiv {
     align-items: center;
+  }
+  .appIntro,
+  .apiPlayGround,
+  .appCards,
+  .appCardsCommingSoon {
+    padding: 2rem 1rem;
+  }
+  .logo {
+    height: 3em;
   }
 }
