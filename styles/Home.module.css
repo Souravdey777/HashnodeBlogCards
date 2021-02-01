@@ -62,16 +62,9 @@
   color: #2962ff;
 }
 
-.appCards {
-  padding: 0rem 5rem;
-  display: flex;
-  flex-flow: row wrap;
-  align-items: center;
-  justify-content: space-evenly;
-  color: #424242;
-}
-
+.appCards,
 .appCardsCommingSoon {
+  padding: 0rem 5rem;
   display: flex;
   flex-flow: row wrap;
   align-items: flex-start;
@@ -181,6 +174,10 @@
   .apiPlayGround,
   .appCards {
     padding: 2rem 1rem;
+  }
+  .appCardsCommingSoon {
+    padding: 0rem;
+    padding-bottom: 5rem;
   }
   .logo {
     height: 3em;
