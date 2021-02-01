@@ -4,6 +4,7 @@ import * as blogger from '../assets/blogger.json';
 import * as coomingsoon from '../assets/flying.json';
 import styles from '../styles/Home.module.css';
 import React, { useState } from 'react';
+import PlayGround from "../components/playGround";
 
 export default function Home() {
 
@@ -64,24 +65,24 @@ export default function Home() {
           <div onClick={() => setEndpoint(2)} className={Endpoint === 2 ? styles.apibuttonActive : styles.apibutton}>/getLatestHashnodeBlog</div>
         </div>
         <div>
-          {Endpoint}
+          <PlayGround Endpoint={Endpoint} />
         </div>
       </div>
       <div className={styles.appCards}>
         <div className={styles.appCardsDiv}>
           <div className={styles.appCardsText1}>🌞 Light Theme</div>
           <p className={styles.subHeading}>This light theme of Blog Cards </p>
-          <img src="https://hashnode-blog-cards.vercel.app/api/getHashnodeBlog?url=https://blog.larsbehrenberg.com/use-javascripts-fetch-api-with-asyncawait-to-fetch-your-instagram-feed-in-react" />
+          <img src="https://hashnode-blog-cards.vercel.app/api/getHashnodeBlog?url=https://blog.larsbehrenberg.com/use-javascripts-fetch-api-with-asyncawait-to-fetch-your-instagram-feed-in-react&theme=light" />
         </div>
         <div className={styles.appCardsDiv}>
           <div className={styles.appCardsText2}>🌚 Dark Theme</div>
           <p className={styles.subHeading}>This light theme of Blog Cards </p>
-          <img src="https://hashnode-blog-cards.vercel.app/api/getHashnodeBlog?url=https://blog.larsbehrenberg.com/use-javascripts-fetch-api-with-asyncawait-to-fetch-your-instagram-feed-in-react&dark=true" />
+          <img src="https://hashnode-blog-cards.vercel.app/api/getHashnodeBlog?url=https://blog.larsbehrenberg.com/use-javascripts-fetch-api-with-asyncawait-to-fetch-your-instagram-feed-in-react&theme=dark" />
         </div>
         <div className={styles.appCardsDiv}>
-          <div className={styles.appCardsText3}>💧 Blue Theme</div>
+          <div className={styles.appCardsText3}>🚀 Blue Theme</div>
           <p className={styles.subHeading}>This light theme of Blog Cards </p>
-          <img src="https://hashnode-blog-cards.vercel.app/api/getHashnodeBlog?url=https://blog.larsbehrenberg.com/use-javascripts-fetch-api-with-asyncawait-to-fetch-your-instagram-feed-in-react" />
+          <img src="https://hashnode-blog-cards.vercel.app/api/getHashnodeBlog?url=https://blog.larsbehrenberg.com/use-javascripts-fetch-api-with-asyncawait-to-fetch-your-instagram-feed-in-react&theme=blue" />
         </div>
       </div>
       <div className={styles.appCardsCommingSoon}>
