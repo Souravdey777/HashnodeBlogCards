@@ -59,12 +59,12 @@ export default function Home() {
 
       <div className={styles.apiPlayGround}>
         <div className={styles.apis}>
-          <div className={styles.apiPlayGroundHeader}>🍺 APIs Playground</div>
-          <div onClick={() => setEndpoint(0)} className={Endpoint === 0 ? styles.apibuttonActive : styles.apibutton}>/getHashnodeBlog</div>
-          <div onClick={() => setEndpoint(1)} className={Endpoint === 1 ? styles.apibuttonActive : styles.apibutton}>/getHashnodeBlogBySequence</div>
-          <div onClick={() => setEndpoint(2)} className={Endpoint === 2 ? styles.apibuttonActive : styles.apibutton}>/getLatestHashnodeBlog</div>
+          <div className={styles.apiPlayGroundHeader}>🍻 APIs Playground</div>
+          <div onClick={() => setEndpoint(0)} className={Endpoint === 0 ? styles.apibuttonActive : styles.apibutton}> &rarr; getHashnodeBlog</div>
+          <div onClick={() => setEndpoint(1)} className={Endpoint === 1 ? styles.apibuttonActive : styles.apibutton}> &rarr; getHashnodeBlogBySequence</div>
+          <div onClick={() => setEndpoint(2)} className={Endpoint === 2 ? styles.apibuttonActive : styles.apibutton}> &rarr; getLatestHashnodeBlog</div>
         </div>
-        <div>
+        <div style={{ flex: "1" }}>
           <PlayGround Endpoint={Endpoint} />
         </div>
       </div>

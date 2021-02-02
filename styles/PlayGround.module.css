@@ -1,0 +1,46 @@
+.PlayGround {
+  margin: 1rem 2rem;
+  padding: 5rem 2rem;
+  flex: 1;
+  border-radius: 10px;
+  background-color: #ffffff;
+  border: 0.01rem solid #afafaf;
+}
+
+.textBox {
+  width: 100%;
+  line-height: 1.5;
+  font-size: 1rem;
+  padding: 0.8rem;
+  border: 0.01rem solid transparent;
+  color: #232326;
+  border-radius: 10px;
+  outline: none;
+  background-color: #2962ff11;
+}
+
+.textBox:hover {
+  border: 0.01rem solid #afafaf;
+  background-color: #ffffff;
+}
+
+.sendRequest {
+  width: 150px;
+  text-align: center;
+  padding: 0.8rem;
+  margin: 1rem 0rem;
+  border-radius: 10px;
+  background-color: #2962ff;
+  color: rgba(245, 247, 250, 1);
+  font-weight: 900;
+  font-size: 1.2rem;
+  align-self: flex-end;
+  cursor: pointer;
+}
+
+@media (max-width: 769px) {
+  .PlayGround {
+    margin: 1rem 0rem;
+    padding: 2rem 1rem;
+  }
+}

@@ -23,6 +23,15 @@
 }
 
 .apiPlayGround {
+  background-color: #2962ff11;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 2rem 5rem;
+}
+
+.apis {
+  display: flex;
+  flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
 }
@@ -35,18 +44,20 @@
   font-size: 1rem;
   font-weight: bold;
   padding: 0.8rem;
-  margin: 0.8rem 0rem;
+  margin: 1rem 0rem;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .apibutton:hover,
 .apibuttonActive:hover {
   /* color: #2962ff; */
-  background-color: white;
+  background-color: #2962ff22;
 }
 
 .apibuttonActive {
   color: #2962ff;
+  background-color: white;
   /* color: rgba(245, 247, 250, 1); */
 }
 
@@ -55,7 +66,6 @@
   color: rgba(245, 247, 250, 1);
   font-weight: 900;
   font-size: 1.2rem;
-  text-align: center;
 }
 
 .appIntroText {
@@ -186,6 +196,14 @@
   .apiPlayGround,
   .appCards {
     padding: 5rem 1rem;
+  }
+  .apis {
+    flex: 1;
+  }
+  .apibutton,
+  .apibuttonActive,
+  .apiPlayGroundHeader {
+    width: 100%;
   }
   .appCardsCommingSoon {
     padding: 0rem;

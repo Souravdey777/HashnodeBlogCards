@@ -7,7 +7,7 @@
     BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans",
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Noto Color Emoji";
-  background-color: linear-gradient(45deg, rgba(245, 247, 250), rgb(0, 22, 54));
+  background-color: rgba(245, 247, 250);
 }
 
 .animationContainer {
@@ -42,15 +42,15 @@
   margin-top: 3rem;
   padding: 1rem;
   border-radius: 10px;
-  color: #2962ff;
   text-decoration: none;
-  font-size: 1.1rem;
-  font-weight: 900;
+  color: #424242;
+  font-size: 1rem;
+  font-weight: bold;
   line-height: 1.15;
 }
 .link:hover {
-  color: white;
-  background-color: #2962ff;
+  color: #2962ff;
+  background-color: #ffffff;
 }
 
 @media (max-width: 769px) {
