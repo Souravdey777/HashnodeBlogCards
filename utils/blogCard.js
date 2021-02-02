@@ -1,4 +1,4 @@
-import { BLUE_THEME, DARK_THEME, LIGHT_THEME } from "./Constants";
+import { THEMES } from "./Constants";
 import getBase64 from "./datafetcher/getBase64";
 
 const blogCard = async (data, hostname, large = false, theme = "light") => {
@@ -8,15 +8,11 @@ const blogCard = async (data, hostname, large = false, theme = "light") => {
   const blogDate = new Date(Date.parse(dateAdded)).toLocaleString('default', { year: 'numeric', month: 'short', day: 'numeric' })
   const blogLink = `https://${hostname}/${slug}`;
 
+  var color = THEMES.find(onetheme => onetheme.THEME_NAME === theme)
+  if (!color) {
+    var color = THEMES[0]
+  }
 
-  if (theme === BLUE_THEME.THEME_NAME)
-    var color = BLUE_THEME
-  else if (theme === DARK_THEME.THEME_NAME)
-    var color = DARK_THEME
-  else
-    var color = LIGHT_THEME
-
-  // console.log(theme)
   return `<svg  ${large ? ` width="302" height="522"` : ` width="174" height="300" `} viewBox="0 0 302 522" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
     <a href="${blogLink}" target="_blank">
     <rect x="1" y="1" width="300" height="520" rx="4" fill="${color.SVG_fill}" stroke="${color.SVG_stroke}" stroke-width="1" />
