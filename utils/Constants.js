@@ -1,6 +1,7 @@
 export const HASHNODE_API_URL = "https://api.hashnode.com/"
 
 export const LIGHT_THEME = {
+    THEME_NAME: "light",
     SVG_fill: "#ffffff",
     SVG_stroke: "#E5E7EB",
     author_name: "#424242",
@@ -12,6 +13,7 @@ export const LIGHT_THEME = {
 }
 
 export const DARK_THEME = {
+    THEME_NAME: "dark",
     SVG_fill: "#232626",
     SVG_stroke: "#AEAEAE",
     author_name: "#F5F5F5",
@@ -23,6 +25,7 @@ export const DARK_THEME = {
 }
 
 export const BLUE_THEME = {
+    THEME_NAME: "blue",
     SVG_fill: "#2962ff",
     SVG_stroke: "#F5F5F5",
     author_name: "#F5F5F5",
