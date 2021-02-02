@@ -1,6 +1,6 @@
 .PlayGround {
   margin: 1rem 0rem 1rem 2rem;
-  padding: 5rem 2rem;
+  padding: 4.2rem 2rem;
   flex: 1;
   border-radius: 10px;
   background-color: #ffffff;
@@ -12,11 +12,21 @@
   line-height: 1.5;
   font-size: 1rem;
   padding: 0.8rem;
+  margin: 0.8rem 0rem;
   border: 0.01rem solid transparent;
   color: #232326;
   border-radius: 10px;
   outline: none;
   background-color: #2962ff11;
+}
+
+.labels {
+  line-height: 1.5;
+  font-size: 1rem;
+  padding: 0.8rem;
+  margin: 0.8rem 0rem;
+  color: #232326;
+  font-weight: bold;
 }
 
 .textBox:hover {
@@ -36,6 +46,34 @@
   font-size: 1.2rem;
   align-self: flex-end;
   cursor: pointer;
+}
+
+.responseHolder {
+  padding: 1rem;
+  border-radius: 10px;
+  border: 0.01rem solid transparent;
+  color: #232326;
+  outline: none;
+  background-color: #2962ff11;
+  height: 700px;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+.commonParams {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.commonParams div {
+  flex: 0.5;
+  display: flex;
+  justify-content: center;
+}
+
+.commonParams div select {
+  width: 150px;
 }
 
 @media (max-width: 769px) {

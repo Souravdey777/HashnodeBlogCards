@@ -1,30 +1,28 @@
 import React, { useState } from 'react';
-import axios from 'axios';
-import styles from "../../styles/PlayGround.module.css"
+import styles from "../../styles/PlayGround.module.css";
+import { THEMES } from '../../utils/Constants';
 
-function GetHashnodeBlog(props) {
-    const [Response, setResponse] = useState(null)
-    const [BlogURL, setBlogURL] = useState()
-    const getData = async () => {
-        console.log("clicked")
-        return await axios
-            .get(`https://hashnode-blog-cards.souravdey777.vercel.app/api/getHashnodeBlog?url=${BlogURL}&large=true`)
-            .then(res => {
-                console.log(res.data)
-                // let blob = new Blob([response.data], { type: 'image/svg+xml' })
-                // let url = URL.createObjectURL(blob);
-                // setResponse(url);
-                // var parse = new DOMParser();
-                // var url = parse.parseFromString(res)
-                // setResponse(res.data);
-                const buff = new Buffer(res.data);
-                const base64data = buff.toString('base64');
-                console.log(typeof (res.data))
-                setResponse(base64data);
-            })
+function GetHashnodeBlog() {
+    const [API_URL, setAPI_URL] = useState()
+    const [params, setparams] = useState({
+        blogURL: "",
+        large: "true",
+        theme: THEMES[0]
+    })
+    const getData = () => {
+        console.log("SEND clicked")
+        setAPI_URL(`https://hashnode-blog-cards.souravdey777.vercel.app/api/getHashnodeBlog?url=${params.blogURL}&large=${params.large}&theme=${params.theme}`)
+        console.log(API_URL)
     }
-    const handleBlogURL = (event) => {
-        setBlogURL(event.target.value);
+    const handleblogURL = (event) => {
+        setparams({ ...params, blogURL: event.target.value });
+        console.log({ ...params, blogURL: event.target.value })
+    }
+    const handlelarge = (event) => {
+        setparams({ ...params, large: event.target.value });
+    }
+    const handletheme = (event) => {
+        setparams({ ...params, theme: event.target.value });
     }
     return (
         <div className={styles.PlayGround}>
@@ -32,15 +30,39 @@ function GetHashnodeBlog(props) {
                 <input
                     className={styles.textBox}
                     placeholder="Enter the URL..."
-                    type="text" value={BlogURL} onChange={(e) => handleBlogURL(e)} />
-                {console.log(BlogURL)}
+                    type="text" value={params.blogURL} onChange={handleblogURL} />
+                <div className={styles.commonParams}>
+                    <div>
+                        <div className={styles.labels}>Choose Size</div>
+                        <select
+                            className={styles.textBox}
+                            value={params.large}
+                            onChange={handlelarge}
+                            placeholder="large size">
+                            <option value="true">large</option>
+                            <option value="false">small</option>
+                        </select>
+
+                    </div>
+                    <div>
+                        <div className={styles.labels}>Choose Theme</div>
+                        <select
+                            className={styles.textBox}
+                            value={params.theme}
+                            onChange={handletheme}
+                            placeholder="">.
+                            {THEMES.map((onetheme, key) =>
+                                <option key={key} value={onetheme.THEME_NAME}>{onetheme.THEME_NAME}</option>
+                            )}
+                        </select></div>
+                </div>
                 <div className={styles.sendRequest} onClick={() => getData()}>
                     Send 🚀
                 </div>
             </div>
             <div className={styles.responseHolder}>
-                {Response ? <img src={`data:image/svg+xml;base64,${Response}`} /> : null}
-                {/* <img src={`https://hashnode-blog-cards.souravdey777.vercel.app/api/getLatestHashnodeBlog?username=${BlogURL}&large=true&limit=6`} /> */}
+                <object data={API_URL}
+                    type="text/html"></object>
             </div>
         </div>
 
