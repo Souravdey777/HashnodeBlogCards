@@ -8,7 +8,7 @@ function GetHashnodeBlog(props) {
     const getData = async () => {
         console.log("clicked")
         return await axios
-            .get(`http://localhost:3000/api/getHashnodeBlog?url=${BlogURL}&large=true`)
+            .get(`https://hashnode-blog-cards.souravdey777.vercel.app/api/getHashnodeBlog?url=${BlogURL}&large=true`)
             .then(response => {
                 console.log(response.data)
                 let blob = new Blob([response.data], { type: 'image/svg+xml' })
