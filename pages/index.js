@@ -64,7 +64,7 @@ export default function Home() {
           <div onClick={() => setEndpoint(1)} className={Endpoint === 1 ? styles.apibuttonActive : styles.apibutton}> &rarr; getHashnodeBlogBySequence</div>
           <div onClick={() => setEndpoint(2)} className={Endpoint === 2 ? styles.apibuttonActive : styles.apibutton}> &rarr; getLatestHashnodeBlog</div>
         </div>
-        <div style={{ flex: "1" }}>
+        <div style={{ width: "100%" }}>
           <PlayGround Endpoint={Endpoint} />
         </div>
       </div>

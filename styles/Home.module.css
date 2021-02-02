@@ -24,6 +24,7 @@
 
 .apiPlayGround {
   background-color: #2962ff11;
+  flex-flow: row;
   justify-content: flex-start;
   align-items: flex-start;
   padding: 2rem 5rem;
@@ -196,6 +197,9 @@
   .apiPlayGround,
   .appCards {
     padding: 5rem 1rem;
+  }
+  .apiPlayGround {
+    flex-direction: column;
   }
   .apis {
     flex: 1;
