@@ -27,10 +27,13 @@ function GetHashnodeBlog() {
     return (
         <div className={styles.PlayGround}>
             <div style={{ display: "flex", flexDirection: "column" }}>
-                <input
-                    className={styles.textBox}
-                    placeholder="Enter the URL..."
-                    type="text" value={params.blogURL} onChange={handleblogURL} />
+                <div style={{ display: "flex", flexDirection: "row" }}>
+                    <div className={styles.labels}>Enter the URL</div>
+                    <input
+                        className={styles.textBox}
+                        placeholder="Enter the URL..."
+                        type="text" value={params.blogURL} onChange={handleblogURL} />
+                </div>
                 <div className={styles.commonParams}>
                     <div>
                         <div className={styles.labels}>Choose Size</div>

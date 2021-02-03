@@ -18,15 +18,18 @@
   border-radius: 10px;
   outline: none;
   background-color: #2962ff11;
+  white-space: nowrap;
 }
 
 .labels {
+  min-width: 10rem;
   line-height: 1.5;
   font-size: 1rem;
   padding: 0.8rem;
   margin: 0.8rem 0rem;
   color: #232326;
   font-weight: bold;
+  white-space: nowrap;
 }
 
 .textBox:hover {
@@ -35,7 +38,7 @@
 }
 
 .sendRequest {
-  width: 150px;
+  width: 10rem;
   text-align: center;
   padding: 0.8rem;
   margin: 1rem 0rem;
@@ -57,28 +60,40 @@
   background-color: #2962ff11;
   height: 700px;
   overflow: auto;
-  white-space: nowrap;
 }
 
 .commonParams {
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
 }
 
 .commonParams div {
-  flex: 0.5;
   display: flex;
-  justify-content: center;
+  flex: 1;
+  justify-content: flex-start;
 }
 
 .commonParams div select {
-  width: 150px;
+  min-width: 10rem;
+  width: 100%;
 }
 
-@media (max-width: 769px) {
+@media (max-width: 801px) {
   .PlayGround {
     margin: 1rem 0rem;
     padding: 2rem 1rem;
+  }
+
+  .textBox {
+    font-size: 0.8rem;
+  }
+
+  .labels {
+    font-size: 0.8rem;
+    min-width: 6rem;
+    white-space: normal;
+  }
+  .commonParams div select {
+    min-width: 6rem;
   }
 }

@@ -40,7 +40,7 @@
 .apibutton,
 .apibuttonActive,
 .apiPlayGroundHeader {
-  width: 300px;
+  width: 18rem;
   color: #424242;
   font-size: 1rem;
   font-weight: bold;
@@ -123,7 +123,7 @@
 
 .appCardsDiv {
   margin: 2rem 0rem;
-  min-width: 300px;
+  min-width: 18rem;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -201,9 +201,7 @@
   .apiPlayGround {
     flex-direction: column;
   }
-  .apis {
-    flex: 1;
-  }
+  .apis,
   .apibutton,
   .apibuttonActive,
   .apiPlayGroundHeader {
