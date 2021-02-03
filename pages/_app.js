@@ -6,6 +6,10 @@ function MyApp({ Component, pageProps }) {
     <Head>
       <title>Hashnode Blog Cards</title>
       <link rel="icon" href="/hashnode-logo.png" />
+      <link
+        href="https://fonts.googleapis.com/icon?family=Material+Icons"
+        rel="stylesheet"
+      />
       <script async defer data-domain="hashnode-blog-cards.souravdey777.vercel.app" src="https://plausible.io/js/plausible.js"></script>
     </Head>
     <Component {...pageProps} />

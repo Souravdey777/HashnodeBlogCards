@@ -14,10 +14,13 @@ function GetHashnodeBlog(props) {
     };
     const { API_URL, setAPI_URL, params, setparams, isLoading, setisLoading } = props
     const getData = () => {
-        setisLoading(true)
-        console.log("SEND clicked");
-        setAPI_URL(`https://hashnode-blog-cards.souravdey777.vercel.app/api/getHashnodeBlog?url=${params.blogURL}&large=${params.large}&theme=${params.theme}`);
-        console.log(API_URL);
+        console.log(API_URL)
+        if (`https://hashnode-blog-cards.souravdey777.vercel.app/api/getHashnodeBlog?url=${params.blogURL}&large=${params.large}&theme=${params.theme}` !== API_URL) {
+            setisLoading(true)
+            console.log("SEND clicked");
+            setAPI_URL(`https://hashnode-blog-cards.souravdey777.vercel.app/api/getHashnodeBlog?url=${params.blogURL}&large=${params.large}&theme=${params.theme}`);
+            console.log(API_URL);
+        }
     }
     const handleblogURL = (event) => {
         setparams({ ...params, blogURL: event.target.value });
@@ -29,6 +32,9 @@ function GetHashnodeBlog(props) {
     const handletheme = (event) => {
         setparams({ ...params, theme: event.target.value });
     }
+    const copyToClipboard = () => {
+        navigator.clipboard.writeText(API_URL)
+    };
     return (
         <div className={styles.PlayGround}>
             <div style={{ display: "flex", flexDirection: "column" }}>
@@ -67,9 +73,20 @@ function GetHashnodeBlog(props) {
                 <div className={styles.sendRequest} onClick={() => getData()}>
                     Send 🚀
                 </div>
+                <div className={styles.API_URL}>
+                    {
+                        <div onClick={() => copyToClipboard()} className={styles.copyIcon}><i style={{ fontSize: "16px" }} className="material-icons">content_copy</i>
+                            <span className={styles.tooltiptext}>Copy</span>
+                        </div>
+                    }
+                    {API_URL === "" ? "GET Request" : API_URL}
+                </div>
             </div>
+            <div className={styles.labels}>Response Body</div>
             <div className={styles.responseHolder}>
-                <object data={API_URL} onLoad={() => { setisLoading(false) }}
+                <object data={API_URL} style={{
+                    position: "absolute",
+                }} onLoad={() => { setisLoading(false) }}
                     type="text/html"></object>
                 {isLoading ?
                     <div className={styles.responseHolderLoader}>

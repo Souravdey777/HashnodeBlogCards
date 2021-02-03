@@ -7,6 +7,21 @@
   border: 0.01rem solid #afafaf;
 }
 
+.API_URL {
+  position: relative;
+  width: 100%;
+  min-height: 5rem;
+  line-height: 1.5;
+  font-size: 1rem;
+  padding: 0.8rem;
+  margin: 0.8rem 0rem;
+  border: 0.01rem solid #afafaf;
+  color: #232326;
+  border-radius: 10px;
+  background-color: #2962ff11;
+  overflow-wrap: break-word;
+}
+
 .textBox {
   width: 100%;
   line-height: 1.5;
@@ -95,13 +110,55 @@
   width: 100%;
 }
 
+.copyIcon {
+  font-size: 16px;
+  font-weight: bold;
+  position: absolute;
+  right: 1rem;
+  cursor: pointer;
+  color: #232326;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-tap-highlight-color: transparent;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.copyIcon .tooltiptext {
+  display: none;
+  width: 5rem;
+  font-size: 0.8rem;
+  color: #2962ff;
+  border: 2px solid #2962ff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 4px;
+  padding-right: 1rem;
+  position: absolute;
+  z-index: 1;
+  top: -5px;
+  right: -8px;
+}
+
+@media (hover: hover) {
+  .copyIcon:hover {
+    color: #2962ff;
+  }
+  .copyIcon:hover .tooltiptext {
+    display: block;
+  }
+}
+
 @media (max-width: 801px) {
   .PlayGround {
     margin: 1rem 0rem;
     padding: 2rem 1rem;
   }
 
-  .textBox {
+  .textBox,
+  .API_URL {
     font-size: 0.8rem;
   }
 

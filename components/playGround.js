@@ -5,12 +5,13 @@ import GetLatestHashnodeBlog from './apiPlayGround/getLatestHashnodeBlog';
 import { THEMES } from '../utils/Constants';
 
 function PlayGround(props) {
-    const [API_URL, setAPI_URL] = useState()
-    const [isLoading, setisLoading] = useState(false);
+    const [isLoading, setisLoading] = useState(false)
+
+    const [API_URL, setAPI_URL] = useState("")
     const [params, setparams] = useState({
         blogURL: "",
         large: "true",
-        theme: THEMES[0]
+        theme: THEMES[0].THEME_NAME
     })
     if (props.Endpoint === 0) {
         return <GetHashnodeBlog
