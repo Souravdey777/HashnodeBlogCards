@@ -1,11 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import GetHashnodeBlog from './apiPlayGround/getHashnodeBlog';
 import GetHashnodeBlogBySequence from './apiPlayGround/getHashnodeBlogBySequence';
 import GetLatestHashnodeBlog from './apiPlayGround/getLatestHashnodeBlog';
+import { THEMES } from '../utils/Constants';
 
 function PlayGround(props) {
+    const [API_URL, setAPI_URL] = useState()
+    const [isLoading, setisLoading] = useState(false);
+    const [params, setparams] = useState({
+        blogURL: "",
+        large: "true",
+        theme: THEMES[0]
+    })
     if (props.Endpoint === 0) {
-        return <GetHashnodeBlog />
+        return <GetHashnodeBlog
+            API_URL={API_URL}
+            setAPI_URL={setAPI_URL}
+            params={params}
+            setparams={setparams}
+            isLoading={isLoading}
+            setisLoading={setisLoading} />
     }
     else if (props.Endpoint === 1) {
         return <GetHashnodeBlogBySequence />

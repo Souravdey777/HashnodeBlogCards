@@ -1,18 +1,23 @@
-import React, { useState } from 'react';
 import styles from "../../styles/PlayGround.module.css";
 import { THEMES } from '../../utils/Constants';
+import * as loader from '../../assets/loader.json';
+import Lottie from "react-lottie";
 
-function GetHashnodeBlog() {
-    const [API_URL, setAPI_URL] = useState()
-    const [params, setparams] = useState({
-        blogURL: "",
-        large: "true",
-        theme: THEMES[0]
-    })
+function GetHashnodeBlog(props) {
+    const loaderdefaultOptions = {
+        loop: true,
+        autoplay: true,
+        animationData: loader.default,
+        rendererSettings: {
+            preserveAspectRatio: "xMidYMid slice"
+        }
+    };
+    const { API_URL, setAPI_URL, params, setparams, isLoading, setisLoading } = props
     const getData = () => {
-        console.log("SEND clicked")
-        setAPI_URL(`https://hashnode-blog-cards.souravdey777.vercel.app/api/getHashnodeBlog?url=${params.blogURL}&large=${params.large}&theme=${params.theme}`)
-        console.log(API_URL)
+        setisLoading(true)
+        console.log("SEND clicked");
+        setAPI_URL(`https://hashnode-blog-cards.souravdey777.vercel.app/api/getHashnodeBlog?url=${params.blogURL}&large=${params.large}&theme=${params.theme}`);
+        console.log(API_URL);
     }
     const handleblogURL = (event) => {
         setparams({ ...params, blogURL: event.target.value });
@@ -64,8 +69,19 @@ function GetHashnodeBlog() {
                 </div>
             </div>
             <div className={styles.responseHolder}>
-                <object data={API_URL}
+                <object data={API_URL} onLoad={() => { setisLoading(false) }}
                     type="text/html"></object>
+                {isLoading ?
+                    <div className={styles.responseHolderLoader}>
+                        <Lottie
+                            options={loaderdefaultOptions}
+                            height={250}
+                            width={250}
+                            isStopped={false}
+                            isPaused={false}
+                            isClickToPauseDisabled={true}
+                        />
+                    </div> : null}
             </div>
         </div>
 

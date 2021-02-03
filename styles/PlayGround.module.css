@@ -54,12 +54,29 @@
 .responseHolder {
   padding: 1rem;
   border-radius: 10px;
-  border: 0.01rem solid transparent;
+  border: 0.01rem solid #afafaf;
   color: #232326;
   outline: none;
   background-color: #2962ff11;
-  height: 700px;
+  height: 560px;
   overflow: auto;
+  position: relative;
+}
+
+.responseHolderLoader {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 10px;
+  color: #232326;
+  outline: none;
+  background-color: rgba(245, 247, 250, 0.15);
+  backdrop-filter: blur(10px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .commonParams {
