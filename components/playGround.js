@@ -19,10 +19,20 @@ function PlayGround(props) {
     const [GetHashnodeBlogBySequence_API_URL, set_GetHashnodeBlogBySequence_API_URL] = useState("")
     const [GetHashnodeBlogBySequence_params, set_GetHashnodeBlogBySequence_params] = useState({
         username: "",
-        sequence: "1",
+        sequence: 1,
         large: "false",
         theme: THEMES[0].THEME_NAME
     })
+
+    //GetLatestHashnodeBlog states
+    const [GetLatestHashnodeBlog_API_URL, set_GetLatestHashnodeBlog_API_URL] = useState("")
+    const [GetLatestHashnodeBlog_params, set_GetLatestHashnodeBlog_params] = useState({
+        username: "",
+        limit: 3,
+        large: "false",
+        theme: THEMES[0].THEME_NAME
+    })
+
     if (props.Endpoint === 0) {
         return <GetHashnodeBlog
             API_URL={GetHashnodeBlog_API_URL}
@@ -42,7 +52,13 @@ function PlayGround(props) {
             setisLoading={setisLoading} />
     }
     else if (props.Endpoint === 2) {
-        return <GetLatestHashnodeBlog />
+        return <GetLatestHashnodeBlog
+            API_URL={GetLatestHashnodeBlog_API_URL}
+            setAPI_URL={set_GetLatestHashnodeBlog_API_URL}
+            params={GetLatestHashnodeBlog_params}
+            setparams={set_GetLatestHashnodeBlog_params}
+            isLoading={isLoading}
+            setisLoading={setisLoading} />
     }
     return <div>Wrong API</div>
 }

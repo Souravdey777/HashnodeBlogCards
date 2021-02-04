@@ -72,17 +72,17 @@ export default function Home() {
         <div className={styles.appCardsDiv}>
           <div className={styles.appCardsText1}>🌞 Light Theme</div>
           <p className={styles.subHeading}>This light theme of Blog Cards </p>
-          <img src="https://hashnode-blog-cards.vercel.app/api/getHashnodeBlog?url=https://blog.larsbehrenberg.com/use-javascripts-fetch-api-with-asyncawait-to-fetch-your-instagram-feed-in-react&theme=light" />
+          <img src="https://hashnode-blog-cards.vercel.app/api/getHashnodeBlog?url=https://townhall.hashnode.com/announcing-hashnode-hackathon-powered-by-vercel&theme=light&large=true" />
         </div>
         <div className={styles.appCardsDiv}>
           <div className={styles.appCardsText2}>🌚 Dark Theme</div>
           <p className={styles.subHeading}>This light theme of Blog Cards </p>
-          <img src="https://hashnode-blog-cards.vercel.app/api/getHashnodeBlog?url=https://blog.larsbehrenberg.com/use-javascripts-fetch-api-with-asyncawait-to-fetch-your-instagram-feed-in-react&theme=dark" />
+          <img src="https://hashnode-blog-cards.vercel.app/api/getHashnodeBlog?url=https://townhall.hashnode.com/announcing-hashnode-hackathon-powered-by-vercel&theme=dark&large=true" />
         </div>
         <div className={styles.appCardsDiv}>
           <div className={styles.appCardsText3}>🚀 Blue Theme</div>
           <p className={styles.subHeading}>This light theme of Blog Cards </p>
-          <img src="https://hashnode-blog-cards.vercel.app/api/getHashnodeBlog?url=https://blog.larsbehrenberg.com/use-javascripts-fetch-api-with-asyncawait-to-fetch-your-instagram-feed-in-react&theme=blue" />
+          <img src="https://hashnode-blog-cards.vercel.app/api/getHashnodeBlog?url=https://townhall.hashnode.com/announcing-hashnode-hackathon-powered-by-vercel&theme=blue&large=true" />
         </div>
       </div>
       <div className={styles.appCardsCommingSoon}>
