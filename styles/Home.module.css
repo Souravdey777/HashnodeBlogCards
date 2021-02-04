@@ -96,6 +96,10 @@
   font-size: 1.2rem;
 }
 
+.description a:hover {
+  text-decoration: underline #2962ff;
+}
+
 .subHeading {
   line-height: 1.5;
   font-size: 1rem;
@@ -103,6 +107,12 @@
 
 .code {
   color: #2962ff;
+}
+
+.greyBg {
+  background-color: #23262622;
+  border-radius: 4px;
+  padding: 1px 6px;
 }
 
 .appCards,
@@ -124,6 +134,7 @@
 .appCardsDiv {
   margin: 2rem 0rem;
   min-width: 18rem;
+  max-width: 310px;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -131,7 +142,7 @@
 }
 
 .appCardsDiv img {
-  height: 510px;
+  min-height: 510px;
   margin-top: 1rem;
 }
 

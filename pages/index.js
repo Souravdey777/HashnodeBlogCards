@@ -38,9 +38,12 @@ export default function Home() {
         <div className={styles.appIntroText}>
           <img src="/hashnode-logo.png" className={styles.logo} />
           <div className={styles.title}>
-            Welcome to hashnode <span>Blog Cards</span>
+            Welcome to hashnode <span className={styles.code}>Blog Cards</span>
           </div>
           <p className={styles.description}>
+            Are you a blogger in {' '}
+            <a href="https://hashnode.com/"><span className={[styles.code]}>Hashnode</span></a>?
+            <br />
             Blog links 🔗 are not enough, Give your blogs what it deserves with{' '}
             <span className={styles.code}>Blog Cards 🔥</span>
           </p>
@@ -68,27 +71,29 @@ export default function Home() {
           <PlayGround Endpoint={Endpoint} />
         </div>
       </div>
+      <div className={styles.subHeading}>🌞 Light Theme</div>
       <div className={styles.appCards}>
         <div className={styles.appCardsDiv}>
           <div className={styles.appCardsText1}>🌞 Light Theme</div>
-          <p className={styles.subHeading}>This light theme of Blog Cards </p>
+          <p className={styles.subHeading}>Checkout the light theme of Blog Cards. Set the theme param as <span className={styles.greyBg}>light</span> in th GET Request</p>
           <img src="https://hashnode-blog-cards.vercel.app/api/getHashnodeBlog?url=https://townhall.hashnode.com/announcing-hashnode-hackathon-powered-by-vercel&theme=light&large=true" />
         </div>
         <div className={styles.appCardsDiv}>
           <div className={styles.appCardsText2}>🌚 Dark Theme</div>
-          <p className={styles.subHeading}>This light theme of Blog Cards </p>
+          <p className={styles.subHeading}>Checkout the light theme of Blog Cards. Set the theme param as <span className={styles.greyBg}>dark</span> in th GET Request</p>
           <img src="https://hashnode-blog-cards.vercel.app/api/getHashnodeBlog?url=https://townhall.hashnode.com/announcing-hashnode-hackathon-powered-by-vercel&theme=dark&large=true" />
         </div>
         <div className={styles.appCardsDiv}>
           <div className={styles.appCardsText3}>🚀 Blue Theme</div>
-          <p className={styles.subHeading}>This light theme of Blog Cards </p>
+          <p className={styles.subHeading}>Checkout the light theme of Blog Cards. Set the theme param as <span className={styles.greyBg}>blue</span> in th GET Request</p>
           <img src="https://hashnode-blog-cards.vercel.app/api/getHashnodeBlog?url=https://townhall.hashnode.com/announcing-hashnode-hackathon-powered-by-vercel&theme=blue&large=true" />
         </div>
       </div>
       <div className={styles.appCardsCommingSoon}>
         <div className={styles.appIntroText}>
           <p className={styles.description}>
-            More Such themes          </p>
+            More Such themes
+          </p>
           <div className={styles.title}>
             <span>Cooming Soon...</span>
           </div>
@@ -104,36 +109,6 @@ export default function Home() {
           />
         </div>
       </div>
-
-      {/* <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div> */}
     </main>
   )
 }
