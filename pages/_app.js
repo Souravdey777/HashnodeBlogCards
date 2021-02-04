@@ -15,18 +15,22 @@ function MyApp({ Component, pageProps }) {
     <Component {...pageProps} />
     <footer className="footer">
       <div className="footer_upper">
-        <div>hashnode Blog Cards</div>
-        <div>Sourav Dey</div>
+        <div>
+          <img src="/brand-full-white.png" className="navlogo" />
+          {' '}
+          <div style={{ fontSize: "1.2rem", fontWeight: "700", color: "#232326" }}>Blog Cards</div>
+        </div>
+        <div className="">Sourav Dey</div>
         <div>Newsletter</div>
         <div>Feedback</div>
       </div>
       <div className="footer_lower">
         <div>
-          Copyright © {(new Date).getFullYear()} hashnode Blog Cards
+          © {(new Date).getFullYear()} hashnode Blog Cards
         </div>
-        {/* <div>
-          
-        </div> */}
+        <div>
+          Developed by <a href="https://github.com/Souravdey777/" target="_blank" rel="noopener noreferrer">Sourav Dey</a>
+        </div>
       </div>
     </footer>
   </>
