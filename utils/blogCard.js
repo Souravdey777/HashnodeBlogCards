@@ -36,7 +36,7 @@ const blogCard = async (data, hostname, large = false, theme = "light") => {
     </foreignObject >
     <text fill="${color.blog_name}"  font-family="Helvetica" font-size="14" font-weight="bold" letter-spacing="0em"><tspan x="16" y="215">${hostname}</tspan></text>
     <foreignObject
-          x="16" y=${coverImage !== "" ? `"370"` : `"250"`} width="260" height="120">
+          x="16" y=${coverImage !== "" ? `"375"` : `"250"`} width="260" height="120">
           <p
             xmlns="http://www.w3.org/1999/xhtml"
             xlink:href="#blogName"
