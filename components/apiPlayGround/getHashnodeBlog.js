@@ -42,7 +42,7 @@ function GetHashnodeBlog(props) {
                     <div className={styles.labels}>Enter the URL</div>
                     <input
                         className={styles.textBox}
-                        placeholder="Enter the URL..."
+                        placeholder="Enter the Blog URL..."
                         type="text" value={params.blogURL} onChange={handleblogURL} />
                 </div>
                 <div className={styles.commonParams}>

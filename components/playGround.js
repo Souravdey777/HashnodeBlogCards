@@ -10,7 +10,7 @@ function PlayGround(props) {
     const [API_URL, setAPI_URL] = useState("")
     const [params, setparams] = useState({
         blogURL: "",
-        large: "true",
+        large: "false",
         theme: THEMES[0].THEME_NAME
     })
     if (props.Endpoint === 0) {
