@@ -84,6 +84,7 @@ function GetLatestHashnodeBlog(props) {
                 <div className={styles.sendRequest} onClick={() => getData()}>
                     Send 🚀
                 </div>
+                <div className={styles.labels}>Request URL 👇</div>
                 <div className={styles.API_URL}>
                     {
                         <div onClick={() => copyToClipboard()} className={styles.copyIcon}><i style={{ fontSize: "16px" }} className="material-icons">content_copy</i>
@@ -93,7 +94,7 @@ function GetLatestHashnodeBlog(props) {
                     {API_URL === "" ? "GET Request" : API_URL}
                 </div>
             </div>
-            <div className={styles.labels}>Response Body</div>
+            <div className={styles.labels}>Response Body 👇</div>
             <div className={styles.responseHolder}>
                 <object data={API_URL} style={{
                     position: "absolute",
