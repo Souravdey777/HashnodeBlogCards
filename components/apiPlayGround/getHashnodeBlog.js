@@ -39,7 +39,7 @@ function GetHashnodeBlog(props) {
         <div className={styles.PlayGround}>
             <div style={{ display: "flex", flexDirection: "column" }}>
                 <div style={{ display: "flex", flexDirection: "row" }}>
-                    <div className={styles.labels}>Enter the URL</div>
+                    <div className={styles.labels}>Blog URL</div>
                     <input
                         className={styles.textBox}
                         placeholder="Enter the Blog URL..."
@@ -47,7 +47,7 @@ function GetHashnodeBlog(props) {
                 </div>
                 <div className={styles.commonParams}>
                     <div>
-                        <div className={styles.labels}>Choose Size</div>
+                        <div className={styles.labels}>Size</div>
                         <select
                             className={styles.textBox}
                             value={params.large}
@@ -59,7 +59,7 @@ function GetHashnodeBlog(props) {
 
                     </div>
                     <div>
-                        <div className={styles.labels}>Choose Theme</div>
+                        <div className={styles.labels}>Theme</div>
                         <select
                             className={styles.textBox}
                             value={params.theme}
