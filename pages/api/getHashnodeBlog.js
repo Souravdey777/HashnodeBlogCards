@@ -11,7 +11,7 @@ export default async (req, res) => {
     )
     try {
         if (!req.query.url) {
-            res.write(JSON.stringify({ error: "URL parameters are missing!" }));
+            res.write(JSON.stringify({ error: "URL parameter is missing!" }));
             res.end();
             return;
         }
