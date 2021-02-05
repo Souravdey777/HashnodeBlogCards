@@ -42,18 +42,41 @@ function HashnodeBlogCard({ Component, pageProps }) {
             </div>
             <div style={{ width: "15rem" }}>
               This website has no official affiliation with{" "}
-              <a href="https://hashnode.com/">hashnode</a>
+              <a href="https://hashnode.com/" target="_bl">
+                hashnode
+              </a>
+            </div>
+          </div>
+
+          <div>
+            <div>
+              <a href="https://hashnode.com/" target="_blank" rel="noreferrer">
+                Ask for a feature
+              </a>
+            </div>
+            <div>
+              <a href="https://hashnode.com/" target="_blank" rel="noreferrer">
+                Ask for a theme
+              </a>
+            </div>
+            <div>
+              <a href="https://hashnode.com/" target="_blank" rel="noreferrer">
+                Report an Issue
+              </a>
             </div>
           </div>
           <div>
-            <div>Newsletter</div>
-            <div>Feedback</div>
-            <div>Licence</div>
-          </div>
-          <div>
-            <div>Ask for a feature</div>
-            <div>Ask for a theme</div>
-            <div>Report an Issue</div>
+            {/* <div>Newsletter</div> */}
+            <div>
+              <a href="https://hashnode.com/" target="_blank" rel="noreferrer">
+                Feedback
+              </a>
+            </div>
+            <div>
+              <a href="https://hashnode.com/" target="_blank" rel="noreferrer">
+                Licence
+              </a>
+            </div>
           </div>
         </div>
         <div className="footer_lower">

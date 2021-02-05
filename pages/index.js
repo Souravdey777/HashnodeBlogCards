@@ -47,7 +47,7 @@ export default function Home() {
           </div>
           <p className={styles.description}>
             Are you a blogger in{" "}
-            <a href="https://hashnode.com/">
+            <a href="https://hashnode.com/" target="_blank" rel="noreferrer">
               <span className={[styles.code]}>Hashnode</span>
             </a>
             ?
