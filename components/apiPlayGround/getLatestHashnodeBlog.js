@@ -85,7 +85,7 @@ function GetLatestHashnodeBlog(props) {
             <select
               className={styles.textBox}
               value={params.large}
-              onChange={handlelarge}
+              onBlur={handlelarge}
               placeholder="large size"
             >
               <option value="true">large</option>
@@ -97,7 +97,7 @@ function GetLatestHashnodeBlog(props) {
             <select
               className={styles.textBox}
               value={params.theme}
-              onChange={handletheme}
+              onBlur={handletheme}
               placeholder=""
             >
               .
@@ -109,16 +109,33 @@ function GetLatestHashnodeBlog(props) {
             </select>
           </div>
         </div>
-        <div className={styles.sendRequest} onClick={() => getData()}>
+        <div
+          role="button"
+          tabIndex={0}
+          className={styles.sendRequest}
+          onKeyDown={() => getData()}
+          onClick={() => getData()}
+        >
           Send{" "}
           <span role="img" aria-label="rocket">
             🚀
           </span>
         </div>
-        <div className={styles.labels}>Request URL 👇</div>
+        <div className={styles.labels}>
+          Request URL
+          <span role="img" aria-label="downpointer">
+            👇
+          </span>
+        </div>
         <div className={styles.API_URL}>
           {
-            <div onClick={() => copyToClipboard()} className={styles.copyIcon}>
+            <div
+              role="button"
+              tabIndex={0}
+              onKeyDown={() => getData()}
+              onClick={() => copyToClipboard()}
+              className={styles.copyIcon}
+            >
               <i style={{ fontSize: "16px" }} className="material-icons">
                 content_copy
               </i>
@@ -128,7 +145,12 @@ function GetLatestHashnodeBlog(props) {
           {API_URL === "" ? "GET Request" : API_URL}
         </div>
       </div>
-      <div className={styles.labels}>Response Body 👇</div>
+      <div className={styles.labels}>
+        Response Body{" "}
+        <span role="img" aria-label="downpointer">
+          👇
+        </span>
+      </div>
       <div className={styles.responseHolder}>
         <object
           data={API_URL}
@@ -139,7 +161,9 @@ function GetLatestHashnodeBlog(props) {
             setisLoading(false);
           }}
           type="text/html"
-        ></object>
+        >
+          Response
+        </object>
         {isLoading ? (
           <div className={styles.responseHolderLoader}>
             <Lottie
