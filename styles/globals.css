@@ -37,7 +37,7 @@ a {
 
 .footer_lower a {
   text-decoration: none;
-  font-weight: bolder;
+  font-weight: 900;
 }
 
 .footer_upper {
@@ -45,6 +45,9 @@ a {
   padding: 1rem 5rem;
   font-size: 0.8rem;
   background-color: #2962ff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .navlogo {

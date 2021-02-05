@@ -22,6 +22,7 @@
 }
 
 .textBox {
+  min-width: 10rem;
   width: 100%;
   line-height: 1.5;
   font-size: 1rem;
