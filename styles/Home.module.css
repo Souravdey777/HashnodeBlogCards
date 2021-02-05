@@ -40,6 +40,10 @@
 .apibutton,
 .apibuttonActive,
 .apiPlayGroundHeader {
+  outline: none;
+  border: none;
+  text-align: start;
+  background-color: transparent;
   width: 18rem;
   color: #424242;
   font-size: 1rem;
