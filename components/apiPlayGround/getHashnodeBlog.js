@@ -68,7 +68,7 @@ function GetHashnodeBlog(props) {
             <select
               className={styles.textBox}
               value={params.large}
-              onBlur={handlelarge}
+              onChange={handlelarge}
               placeholder="large size"
             >
               <option value="true">large</option>
@@ -80,7 +80,7 @@ function GetHashnodeBlog(props) {
             <select
               className={styles.textBox}
               value={params.theme}
-              onBlur={handletheme}
+              onChange={handletheme}
               placeholder=""
             >
               .

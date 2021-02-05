@@ -1,6 +1,6 @@
+import React from "react";
 import "../styles/globals.css";
 import Head from "next/head";
-import React from "react";
 import propTypes from "prop-types";
 
 function HashnodeBlogCard({ Component, pageProps }) {

@@ -1,4 +1,5 @@
 module.exports = {
+  plugins: ["simple-import-sort"],
   root: true, // Make sure eslint picks up the config at the root of the directory
   parserOptions: {
     ecmaVersion: 2021, // Use the latest ecmascript standard
@@ -25,5 +26,15 @@ module.exports = {
   ],
   rules: {
     "prettier/prettier": ["error", {}, { usePrettierrc: true }], // Use our .prettierrc file as source
+    "react/react-in-jsx-scope": "off",
+    "jsx-a11y/no-onchange": 0,
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        components: ["Link"],
+        specialLink: ["hrefLeft", "hrefRight"],
+        aspects: ["invalidHref", "preferButton"],
+      },
+    ],
   },
 };

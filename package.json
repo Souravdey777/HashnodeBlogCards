@@ -1,8 +1,10 @@
 {
   "name": "hashnode-blog-cards",
   "version": "0.1.0",
-  "author": {"email": "piyush.kolkata@gmail.com",
-  "name": "Sourav Dey"},
+  "author": {
+    "email": "piyush.kolkata@gmail.com",
+    "name": "Sourav Dey"
+  },
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -26,6 +28,7 @@
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
     "prettier": "^2.2.1"
   }
 }

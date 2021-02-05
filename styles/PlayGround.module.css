@@ -53,6 +53,8 @@
 }
 
 .sendRequest {
+  margin: none;
+  outline: none;
   width: 10rem;
   text-align: center;
   padding: 0.8rem;
@@ -111,6 +113,8 @@
 }
 
 .copyIcon {
+  margin: none;
+  outline: none;
   font-size: 16px;
   font-weight: bold;
   position: absolute;
