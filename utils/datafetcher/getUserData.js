@@ -1,8 +1,7 @@
-import axios from 'axios';
-import { HASHNODE_API_URL } from '../Constants';
+import axios from "axios";
+import { HASHNODE_API_URL } from "../Constants";
 
 const getLatestHashnodeBlog = async (username, page = 0) => {
-
   try {
     const result = await axios.post(HASHNODE_API_URL, {
       query: `query{

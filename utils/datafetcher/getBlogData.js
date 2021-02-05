@@ -1,5 +1,5 @@
-import axios from 'axios';
-import { HASHNODE_API_URL } from '../Constants';
+import axios from "axios";
+import { HASHNODE_API_URL } from "../Constants";
 
 const getHashnodeBlog = async (slug, hostname) => {
   try {
