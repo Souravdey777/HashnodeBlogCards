@@ -23,7 +23,7 @@ function HashnodeBlogCard({ Component, pageProps }) {
       <Component {...pageProps} />
       <footer className="footer">
         <div className="footer_upper">
-          <div>
+          <div className="footer_upper_col_1">
             <div>
               <img
                 src="/brand-full-white.png"
@@ -40,32 +40,43 @@ function HashnodeBlogCard({ Component, pageProps }) {
                 Blog Cards
               </div>
             </div>
-            <div style={{ width: "15rem" }}>
+            <div>
               This website has no official affiliation with{" "}
-              <a href="https://hashnode.com/" target="_bl">
+              <a href="https://hashnode.com/" target="_blank" rel="noreferrer">
                 hashnode
               </a>
             </div>
           </div>
-
-          <div>
+          <div className="footer_upper_col">
             <div>
-              <a href="https://hashnode.com/" target="_blank" rel="noreferrer">
+              <a
+                href="https://github.com/Souravdey777/HashnodeBlogCards/discussions/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Ask for a feature
               </a>
             </div>
             <div>
-              <a href="https://hashnode.com/" target="_blank" rel="noreferrer">
+              <a
+                href="https://github.com/Souravdey777/HashnodeBlogCards/discussions/"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Ask for a theme
               </a>
             </div>
             <div>
-              <a href="https://hashnode.com/" target="_blank" rel="noreferrer">
+              <a
+                href="https://github.com/Souravdey777/HashnodeBlogCards/issues/new"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Report an Issue
               </a>
             </div>
           </div>
-          <div>
+          <div className="footer_upper_col">
             {/* <div>Newsletter</div> */}
             <div>
               <a href="https://hashnode.com/" target="_blank" rel="noreferrer">
@@ -73,7 +84,11 @@ function HashnodeBlogCard({ Component, pageProps }) {
               </a>
             </div>
             <div>
-              <a href="https://hashnode.com/" target="_blank" rel="noreferrer">
+              <a
+                href="https://github.com/Souravdey777/HashnodeBlogCards/blob/main/LICENSE"
+                target="_blank"
+                rel="noreferrer"
+              >
                 Licence
               </a>
             </div>

@@ -53,7 +53,15 @@ button {
   background-color: #2962ff;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
+}
+
+.footer_upper_col_1 {
+  width: 30rem;
+}
+
+.footer_upper_col {
+  width: 15rem;
 }
 
 .navlogo {
@@ -65,11 +73,14 @@ button {
   .footer_upper {
     padding: 1rem;
     font-size: 0.8rem;
-  }
-  .footer_lower {
     flex-direction: column;
   }
   .footer_lower div {
     padding: 0.2rem 0rem;
+  }
+  .footer_upper_col,
+  .footer_upper_col_1 {
+    padding: 0.8rem 0rem;
+    width: unset;
   }
 }
