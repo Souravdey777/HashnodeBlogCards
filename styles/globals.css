@@ -95,6 +95,7 @@ button {
     padding: 1rem;
     font-size: 0.8rem;
     flex-direction: column;
+    text-align: left;
   }
   .footer_lower div {
     padding: 0.2rem 0rem;
