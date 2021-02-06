@@ -14,7 +14,7 @@ export const THEMES = [
   },
   {
     THEME_NAME: "dark",
-    SVG_fill: "#232626",
+    SVG_fill: "#18191A",
     SVG_stroke: "#AEAEAE",
     author_name: "#F5F5F5",
     author_username: "#AEAEAE",
