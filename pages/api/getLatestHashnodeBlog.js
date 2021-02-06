@@ -39,8 +39,16 @@ export default async (req, res) => {
       return;
     }
     let result = `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="${
-      limit * (large ? 304 : 176)
+      (limit > resultData.data.user.publication.posts.length
+        ? resultData.data.user.publication.posts.length
+        : limit) * (large ? 304 : 176)
     }" version="1.2" height="${large ? 530 : 310}">`;
+
+    console.log(
+      "resultData.data.user.publication.posts.length",
+      resultData.data.user.publication.posts.length
+    );
+    console.log("limit", limit);
     await asyncForEach(
       resultData.data.user.publication.posts,
       async (blog, index) => {
