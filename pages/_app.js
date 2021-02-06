@@ -82,14 +82,7 @@ function HashnodeBlogCard({ Component, pageProps }) {
                 Report an Issue
               </a>
             </div>
-          </div>
-          <div className="footer_upper_col">
-            {/* <div>Newsletter</div> */}
-            <div>
-              <a href="https://hashnode.com/" target="_blank" rel="noreferrer">
-                Feedback Form
-              </a>
-            </div>
+
             <div>
               <a
                 href="https://github.com/Souravdey777/HashnodeBlogCards/blob/main/LICENSE"
@@ -100,6 +93,14 @@ function HashnodeBlogCard({ Component, pageProps }) {
               </a>
             </div>
           </div>
+          {/* <div className="footer_upper_col">
+            <div>Newsletter</div>
+            <div>
+              <a href="" target="_blank" rel="noreferrer">
+                Feedback Form
+              </a>
+            </div>
+          </div> */}
         </div>
         <div className="footer_lower">
           <div>© {new Date().getFullYear()} hashnode Blog Cards</div>

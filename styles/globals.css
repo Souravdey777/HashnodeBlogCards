@@ -49,9 +49,8 @@ button {
 }
 
 .footer_upper {
-  min-height: 150px;
   color: #eaeaea;
-  padding: 1rem 5rem;
+  padding: 2rem 5rem;
   font-size: 0.8rem;
   background-color: #2962ff;
   display: flex;
@@ -65,6 +64,7 @@ button {
 
 .footer_upper_col {
   width: 15rem;
+  font-weight: 400;
 }
 
 .navlogo {
