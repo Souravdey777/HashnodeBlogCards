@@ -58,6 +58,14 @@ button {
   justify-content: flex-start;
 }
 
+.link {
+  font-weight: bold;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
 .footer_upper_col_1 {
   width: 40rem;
 }
@@ -65,6 +73,10 @@ button {
 .footer_upper_col {
   width: 15rem;
   font-weight: 400;
+}
+
+.footer_upper_col div:hover {
+  text-decoration: underline;
 }
 
 .navlogo {

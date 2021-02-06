@@ -50,7 +50,7 @@ function HashnodeBlogCard({ Component, pageProps }) {
             <div>
               This website has no official affiliation with{" "}
               <a href="https://hashnode.com/" target="_blank" rel="noreferrer">
-                hashnode
+                <span className="link">hashnode.com</span>
               </a>
             </div>
           </div>
