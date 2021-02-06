@@ -141,7 +141,7 @@ function HashnodeBlogCard({ Component, pageProps }) {
                 <i className="fab fa-twitter"></i>
               </a>
               <a
-                href="https://twitter.com/Souravdey777/"
+                href="https://souravdey777.hashnode.dev/"
                 target="_blank"
                 rel="noreferrer"
               >
