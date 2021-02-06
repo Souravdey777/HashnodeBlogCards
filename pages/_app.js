@@ -13,12 +13,19 @@ function HashnodeBlogCard({ Component, pageProps }) {
           href="https://fonts.googleapis.com/icon?family=Material+Icons"
           rel="stylesheet"
         />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+          integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+          crossOrigin="anonymous"
+        />
         <script
           async
           defer
           data-domain="hashnode-blog-cards.souravdey777.vercel.app"
           src="https://plausible.io/js/plausible.js"
         ></script>
+        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
       </Head>
       <Component {...pageProps} />
       <footer className="footer">
@@ -80,7 +87,7 @@ function HashnodeBlogCard({ Component, pageProps }) {
             {/* <div>Newsletter</div> */}
             <div>
               <a href="https://hashnode.com/" target="_blank" rel="noreferrer">
-                Feedback
+                Feedback Form
               </a>
             </div>
             <div>
@@ -89,7 +96,7 @@ function HashnodeBlogCard({ Component, pageProps }) {
                 target="_blank"
                 rel="noreferrer"
               >
-                Licence
+                MIT Licence
               </a>
             </div>
           </div>
@@ -97,14 +104,54 @@ function HashnodeBlogCard({ Component, pageProps }) {
         <div className="footer_lower">
           <div>© {new Date().getFullYear()} hashnode Blog Cards</div>
           <div>
-            Developed by{" "}
+            Developed with{" "}
+            <span role="img" aria-label="fire">
+              ❤️
+            </span>{" "}
+            by{" "}
             <a
               href="https://github.com/Souravdey777/"
               target="_blank"
               rel="noopener noreferrer"
+              className="developer"
             >
               @Souravdey777
             </a>
+            <br />
+            <div className="social_icons">
+              <a
+                href="https://github.com/Souravdey777/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-github"></i>
+              </a>
+              <a
+                href="https://www.linkedin.com/in/souravdey777/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-linkedin"></i>
+              </a>
+              <a
+                href="https://twitter.com/Souravdey777/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <i className="fab fa-twitter"></i>
+              </a>
+              <a
+                href="https://twitter.com/Souravdey777/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <span
+                  className="iconify logosvg"
+                  data-icon="simple-icons:hashnode"
+                  data-inline="false"
+                />
+              </a>
+            </div>
           </div>
         </div>
       </footer>

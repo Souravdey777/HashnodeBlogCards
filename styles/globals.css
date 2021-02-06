@@ -39,14 +39,17 @@ button {
   font-size: 0.8rem;
   display: flex;
   justify-content: space-between;
+  text-align: right;
 }
 
-.footer_lower a {
+.developer {
   text-decoration: none;
+  font-weight: bold;
   font-weight: 900;
 }
 
 .footer_upper {
+  min-height: 150px;
   color: #eaeaea;
   padding: 1rem 5rem;
   font-size: 0.8rem;
@@ -57,15 +60,33 @@ button {
 }
 
 .footer_upper_col_1 {
-  width: 30rem;
+  width: 40rem;
 }
 
 .footer_upper_col {
   width: 15rem;
+  color: #eaeaeacc;
 }
 
 .navlogo {
   width: 7rem;
+}
+
+.social_icons i,
+.logosvg {
+  color: #eaeaea22;
+  font-size: 20px;
+  margin: 10px;
+  transition-duration: 0.2s;
+}
+
+.logosvg {
+  margin: -2px 10px;
+}
+
+.social_icons i:hover,
+.logosvg:hover {
+  color: #eaeaea;
 }
 
 @media (max-width: 769px) {
