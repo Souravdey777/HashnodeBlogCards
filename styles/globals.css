@@ -65,7 +65,6 @@ button {
 
 .footer_upper_col {
   width: 15rem;
-  color: #eaeaeacc;
 }
 
 .navlogo {
@@ -74,7 +73,7 @@ button {
 
 .social_icons i,
 .logosvg {
-  color: #eaeaea22;
+  color: #eaeaea33;
   font-size: 20px;
   margin: 10px;
   transition-duration: 0.2s;
