@@ -63,7 +63,7 @@ const blogCard = async (data, hostname, large = false, theme = "light") => {
     <foreignObject
           x="16" y=${
             coverImage !== "" ? `"375"` : `"250"`
-          } width="260" height="120">
+          } width="260" height="140">
           <p
             xmlns="http://www.w3.org/1999/xhtml"
             xlink:href="#blogName"
