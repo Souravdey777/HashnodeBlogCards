@@ -12,7 +12,8 @@
 
 # `Hashnode Blog Cards`
 
-Are you a blogger 📝 in Hashnode?
+Are you a blogger 📝 on **[Hashnode](https://hashnode.com/)**?
+
 
 Reference Link 🔗 of Blogs are not enough, Give your blogs what it actually deserves with Blog Cards 🔥
 
