@@ -34,20 +34,29 @@ Reference Link 🔗 of Blogs are not enough, Give your blogs what it actually de
 ### Table of Contents
 
 - [About `Hashnode Blog Cards`](#about-hashnode-blog-cards)
-- [About API Endpoints](#about-api-endpoints)
+- [About The API Endpoints](#about-the-api-endpoints)
+
 - [Features](#features)
 - [Technologies](#technologies)
 - [Setup](#setup)
 - [Contribution and Support](#contribution-and-support)
 - [License](#license)
 - [Contact](#contact)
-- [Learn More about `Reactjs`](#learn-more-about-reactjs)
+- [Learn More about `nextjs`](#learn-more-about-nextjs)
 
 ## About `Hashnode Blog Cards`
 
-##### What is hashnode?
+##### What is Hashnode?
 
 > **Hashnode** is a free developer blogging platform that allows developers to publish articles on their own domain and helps them stay connected with a global developer community. This gives them a huge advantage: Google and other search engines send traffic directly to the authors' domain, and Hashnode community members discover articles on their feed.
+
+##### What is Hashnode Blog Cards
+
+>⚡ The Hashnode Blog Cards is a set of GET requests which will fetch the Blogs from your Hashnode ids with few parameters and will create SVG cards to bring 😎 awesomeness to your blog links. 🎉
+
+It can be added anywhere in Github, Hashnode, Devpost, Postman Documentation, or any markdown editor. It can also be added to any website with HTML syntax with just the img tag
+
+It is simple to use and the APIs can be explored with the `Hashnode Blog Cards API Playground`.
 
 **Why wait? Straightaway go to the website and join the `Awesomeness`** 😎
 
@@ -64,7 +73,7 @@ Reference Link 🔗 of Blogs are not enough, Give your blogs what it actually de
 
 [![Blog on Hashnode Blog Cards](https://hashnode-blog-cards.souravdey777.vercel.app/api/getHashnodeBlog?url=https://souravdey777.hashnode.dev/hashnode-blog-cards-reference-link-of-blogs-are-not-enough-give-your-blogs-what-it-deserves-with-blog-cards&large=true&theme=light)](https://souravdey777.hashnode.dev/hashnode-blog-cards-reference-link-of-blogs-are-not-enough-give-your-blogs-what-it-deserves-with-blog-cards)
 
-## About API Endpoints 
+## About The API Endpoints 
 
 #### How to use it?
 
@@ -215,14 +224,16 @@ Now let's see the different size we have
 
 ## Features
 
-- Dynamic code generation
-- Tool to 📚 learn Flexbox
+- Dynamic URL creation
+- Dynamic SVG
+- Tool to share your Hashnode Blog
 
 ## Technologies
 
 - nextjs
-> 
-- 
+- reactjs
+- nodejs
+- lottie animation
 
 ##### Dependencies
 
@@ -280,11 +291,10 @@ Loved it!. ⭐ `Star the Repository` and support the project.
 
 Upvote in 🚀 **Product Hunt**.
 
-<a href="https://www.producthunt.com/posts/flexbox-guide?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-flexbox-guide" target="_blank">
-  <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=281660&theme=light" alt="Flexbox-Guide - Flexbox-Guide : A flexbox code generator | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" />
-</a>
+<a href="https://www.producthunt.com/posts/hashnode-blog-cards?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-hashnode-blog-cards" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=283707&theme=light" alt="Hashnode Blog Cards - ⚡ Give your blogs what it actually deserves with Blog Cards. | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a>
 
-- [Ask for a new feature or theme](https://github.com/Souravdey777/HashnodeBlogCards/discussions/)
+
+- [Ask for a new `feature` or `theme`](https://github.com/Souravdey777/HashnodeBlogCards/discussions/)
 
 - [Open a Pull Request](https://github.com/Souravdey777/HashnodeBlogCards/pulls) 
  
@@ -326,7 +336,7 @@ Upvote in 🚀 **Product Hunt**.
 [speakerdeck]: https://speakerdeck.com/Souravdey777
 
 
-## Learn More about `Next.js`
+## Learn More about `Nextjs`
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
