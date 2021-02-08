@@ -73,7 +73,7 @@ It is simple to use and the APIs can be explored with the `Hashnode Blog Cards A
 <!-- ##### Video Demo-->
 ## You can also Check my blog on `Hashnode Blog Cards`
 
-[![Blog on Hashnode Blog Cards](https://hashnode-blog-cards.souravdey777.vercel.app/api/getHashnodeBlog?url=https://souravdey777.hashnode.dev/hashnode-blog-cards-reference-link-of-blogs-are-not-enough-give-your-blogs-what-it-deserves-with-blog-cards&large=true&theme=light)](https://souravdey777.hashnode.dev/hashnode-blog-cards-reference-link-of-blogs-are-not-enough-give-your-blogs-what-it-deserves-with-blog-cards)
+[![Blog on Hashnode Blog Cards](https://hashnode-blog-cards.souravdey777.vercel.app/api/getHashnodeBlog?url=https://souravdey777.hashnode.dev/hashnode-blog-cards-reference-link-of-blogs-are-not-enough-give-your-blogs-what-it-deserves-with-blog-cards&large=true&theme=dark)](https://souravdey777.hashnode.dev/hashnode-blog-cards-reference-link-of-blogs-are-not-enough-give-your-blogs-what-it-deserves-with-blog-cards)
 
 ## About The API Endpoints 
 
