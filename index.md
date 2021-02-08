@@ -1,6 +1,6 @@
 <p align="center">
 <a  href="https://hashnode-blog-cards.vercel.app/" target="_blank">
-<img src="./public/hashnode-logo.png?raw=true" width=100px title="Hashnode Blog Cards" alt="Hashnode Blog Cards"/>
+<img src="https://raw.githubusercontent.com/Souravdey777/HashnodeBlogCards/main/public/hashnode-logo.png?raw=true" width=100px title="Hashnode Blog Cards" alt="Hashnode Blog Cards"/>
 </a>
 </p>
 <p align="center">
