@@ -71,12 +71,21 @@ button {
 }
 
 .footer_upper_col {
-  width: 15rem;
+  width: 8rem;
   font-weight: 400;
 }
 
+.footer_upper_col div {
+  padding: 0.1rem;
+  transition-duration: 0.5s;
+  border-radius: 4px;
+  padding: 0.3rem;
+  margin: 2px;
+}
+
 .footer_upper_col div:hover {
-  text-decoration: underline;
+  background-color: #eaeaea33;
+  color: #232326;
 }
 
 .navlogo {
