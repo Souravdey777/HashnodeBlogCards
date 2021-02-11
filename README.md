@@ -26,8 +26,8 @@ Reference Link 🔗 of Blogs are not enough, Give your blogs what it actually de
 </p>
 
 <p align="center">
-<a  href="https://flexbox-guide.souravdey777.vercel.app" target="_blank">
-<img src="./public/cover.jpg?raw=true" width=1280px title="Flexbox-Guide: A Flexbox Code Generator" alt="Flexbox-Guide"/>
+<a  href="https://hashnode-blog-cards.vercel.app/" target="_blank">
+<img src="https://raw.githubusercontent.com/Souravdey777/HashnodeBlogCards/main/public/Hashnode%20Blog%20Cards%20Screenshot.png" width="600px" title="Hashnode Blog Cards" alt="Hashnode Blog Cards"/>
 </a>
 </p>
 
@@ -35,7 +35,9 @@ Reference Link 🔗 of Blogs are not enough, Give your blogs what it actually de
 
 - [About `Hashnode Blog Cards`](#about-hashnode-blog-cards)
 - [About The API Endpoints](#about-the-api-endpoints)
-
+  - [getHashnodeBlog](#gethashnodeblog)
+  - [getHashnodeBlogBySequence](#gethashnodeblogbysequence)
+  - [getLatestHashnodeBlog](#getlatesthashnodeblog)
 - [Features](#features)
 - [Technologies](#technologies)
 - [Setup](#setup)
@@ -71,7 +73,7 @@ It is simple to use and the APIs can be explored with the `Hashnode Blog Cards A
 <!-- ##### Video Demo-->
 ## You can also Check my blog on `Hashnode Blog Cards`
 
-[![Blog on Hashnode Blog Cards](https://hashnode-blog-cards.souravdey777.vercel.app/api/getHashnodeBlog?url=https://souravdey777.hashnode.dev/hashnode-blog-cards-reference-link-of-blogs-are-not-enough-give-your-blogs-what-it-deserves-with-blog-cards&large=true&theme=light)](https://souravdey777.hashnode.dev/hashnode-blog-cards-reference-link-of-blogs-are-not-enough-give-your-blogs-what-it-deserves-with-blog-cards)
+[![Blog on Hashnode Blog Cards](https://hashnode-blog-cards.souravdey777.vercel.app/api/getHashnodeBlog?url=https://souravdey777.hashnode.dev/hashnode-blog-cards-reference-link-of-blogs-are-not-enough-give-your-blogs-what-it-deserves-with-blog-cards&large=true&theme=dark)](https://souravdey777.hashnode.dev/hashnode-blog-cards-reference-link-of-blogs-are-not-enough-give-your-blogs-what-it-deserves-with-blog-cards)
 
 ## About The API Endpoints 
 
