@@ -19,6 +19,18 @@ function HashnodeBlogCard({ Component, pageProps }) {
           integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
           crossOrigin="anonymous"
         />
+        {/* Buy me a Coffee */}
+        <script
+          data-name="BMC-Widget"
+          src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+          data-id="Souravdey777"
+          data-description="Support me on Buy me a coffee!"
+          data-message=""
+          data-color="#2962ff"
+          data-position="Right"
+          data-x_margin="16"
+          data-y_margin="16"
+        ></script>
         <script
           async
           defer
@@ -103,7 +115,10 @@ function HashnodeBlogCard({ Component, pageProps }) {
           </div> */}
         </div>
         <div className="footer_lower">
-          <div>© {new Date().getFullYear()} hashnode Blog Cards</div>
+          <div>
+            <div>© {new Date().getFullYear()} hashnode Blog Cards</div>
+            {/* <div>Support the project with a Star in Github</div> */}
+          </div>
           <div>
             Developed with{" "}
             <span role="img" aria-label="fire">

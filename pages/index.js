@@ -52,7 +52,6 @@ export default function Home() {
             </a>
             ?
             <br />
-            <br />
             Reference Link 🔗 of Blogs are not enough, Give your blogs what it
             deserves with{" "}
             <span className={styles.code}>
@@ -62,6 +61,16 @@ export default function Home() {
               </span>
             </span>
           </p>
+          <a
+            href="https://www.producthunt.com/posts/hashnode-blog-cards?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-hashnode-blog-cards"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img
+              src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=283707&theme=light"
+              alt="Hashnode Blog Cards - Replace your Hashnode Blog links with Blogs Cards. | Product Hunt"
+            />
+          </a>
         </div>
         <div>
           <Lottie
