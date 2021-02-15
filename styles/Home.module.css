@@ -22,6 +22,16 @@
   /* border-bottom: #2962ff 0.01rem solid; */
 }
 
+.appDescription {
+  padding: 2rem 6rem;
+  /* min-height: 100vh; */
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  background-color: #232326;
+  color: #ffffff;
+}
+
 .apiPlayGround {
   background-color: #2962ff11;
   flex-flow: row;
@@ -118,6 +128,12 @@
   border-radius: 4px;
   padding: 1px 6px;
 }
+.whiteBg {
+  color: #ffffff !important;
+  background-color: #ffffff22;
+  border-radius: 4px;
+  padding: 1px 6px;
+}
 
 .appCards,
 .appCardsCommingSoon {
@@ -194,6 +210,11 @@
   width: 7rem;
 }
 
+.githubLink {
+  border-radius: 6px;
+  width: 300px;
+}
+
 @media (max-width: 769px) {
   .title,
   .description {
@@ -202,16 +223,28 @@
   .appIntroText {
     text-align: center;
   }
+  .appDescription .title,
+  .appDescription .description {
+    text-align: left;
+  }
+  .appDescription .title {
+    font-size: 2rem;
+  }
+  .appDescription .description {
+    font-size: 1rem;
+    font-weight: normal;
+  }
   .title {
-    font-size: 3.2rem;
+    font-size: 3rem;
   }
   .appCardsDiv {
     align-items: center;
   }
   .appIntro,
   .apiPlayGround,
-  .appCards {
-    padding: 5rem 1rem;
+  .appCards,
+  .appDescription {
+    padding: 5rem 2rem;
   }
   .apiPlayGround {
     flex-direction: column;
