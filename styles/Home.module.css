@@ -19,12 +19,10 @@
   align-items: center;
   justify-content: space-evenly;
   color: #424242;
-  /* border-bottom: #2962ff 0.01rem solid; */
 }
 
 .appDescription {
-  padding: 2rem 6rem;
-  /* min-height: 100vh; */
+  padding: 2rem 8rem;
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -120,7 +118,7 @@
 }
 .whiteBg {
   color: #ffffff !important;
-  background-color: #ffffff22;
+  background-color: #424242;
   border-radius: 4px;
   padding: 1px 6px;
 }
@@ -137,8 +135,6 @@
 
 .appCards {
   min-height: 100vh;
-  /* background-color: black;
-  color: #cccccc; */
 }
 
 .appCardsDiv {
@@ -201,7 +197,7 @@
 }
 
 .githubLink {
-  border-radius: 6px;
+  border-radius: 4px;
   width: 300px;
 }
 
@@ -211,7 +207,6 @@
   }
   .apibutton:hover,
   .apibuttonActive:hover {
-    /* color: #2962ff; */
     background-color: #2962ff22;
   }
 }

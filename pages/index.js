@@ -130,10 +130,11 @@ export default function Home() {
               articles on their feed.
             </p>
             <p className={styles.description}>
-              Hashnode Blog Cards website and APIs completely Open Source.
+              Hashnode Blog Cards website and APIs completely{" "}
+              <span className={styles.whiteBg}>Open Source</span>.
               <br />
               Show your love with{" "}
-              <span role="img" aria-label="glasses">
+              <span role="img" aria-label="star">
                 ⭐
               </span>
               <div style={{ paddingTop: "20px" }}>
@@ -146,7 +147,7 @@ export default function Home() {
                     className={styles.githubLink}
                     title="Hashnode Blog Cards"
                     alt="Hashnode Blog Cards"
-                    src="https://img.shields.io/badge/Click%20here%20for%20Source%20Code-2962ff?style=flat-square&logo=github&logoColor=fff&label=Github&labelColor=333"
+                    src="https://img.shields.io/badge/Click%20here%20for%20Source%20Code-2962ff?style=flat-square&logo=github&logoColor=fff&label=Github&labelColor=424242"
                   />
                 </a>
               </div>
