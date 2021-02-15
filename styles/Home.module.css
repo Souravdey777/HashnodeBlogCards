@@ -64,12 +64,6 @@
   cursor: pointer;
 }
 
-.apibutton:hover,
-.apibuttonActive:hover {
-  /* color: #2962ff; */
-  background-color: #2962ff22;
-}
-
 .apibuttonActive {
   color: #2962ff;
   background-color: white;
@@ -108,10 +102,6 @@
 .description {
   line-height: 1.5;
   font-size: 1.2rem;
-}
-
-.description a:hover {
-  text-decoration: underline #2962ff;
 }
 
 .subHeading {
@@ -213,6 +203,17 @@
 .githubLink {
   border-radius: 6px;
   width: 300px;
+}
+
+@media (hover: hover) {
+  .description a:hover {
+    text-decoration: underline #2962ff;
+  }
+  .apibutton:hover,
+  .apibuttonActive:hover {
+    /* color: #2962ff; */
+    background-color: #2962ff22;
+  }
 }
 
 @media (max-width: 769px) {
