@@ -199,7 +199,8 @@
 
 .githubLink {
   border-radius: 4px;
-  width: 300px;
+  max-width: 300px;
+  width: 100%;
 }
 
 @media (hover: hover) {
