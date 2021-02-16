@@ -205,6 +205,11 @@ export default function Home() {
             <span className={styles.greyBg}>light</span> in th GET Request
           </p>
           <img
+            style={{
+              borderRadius: "6px",
+              boxShadow:
+                "0 0 0 1px rgb(53 72 91 / 10%), 0 2px 2px rgb(0 0 0 / 3%), 0 4px 4px rgb(0 0 0 / 4%), 0 10px 8px rgb(0 0 0 / 5%), 0 15px 15px rgb(0 0 0 / 6%), 0 30px 30px rgb(0 0 0 / 7%), 0 70px 65px rgb(0 0 0 / 9%)",
+            }}
             alt="light theme sample"
             src="https://hashnode-blog-cards.vercel.app/api/getHashnodeBlog?url=https://townhall.hashnode.com/announcing-hashnode-hackathon-powered-by-vercel&theme=light&large=true"
           />
@@ -221,6 +226,11 @@ export default function Home() {
             <span className={styles.greyBg}>dark</span> in th GET Request
           </p>
           <img
+            style={{
+              borderRadius: "6px",
+              boxShadow:
+                "0 0 0 1px rgb(53 72 91 / 10%), 0 2px 2px rgb(0 0 0 / 3%), 0 4px 4px rgb(0 0 0 / 4%), 0 10px 8px rgb(0 0 0 / 5%), 0 15px 15px rgb(0 0 0 / 6%), 0 30px 30px rgb(0 0 0 / 7%), 0 70px 65px rgb(0 0 0 / 9%)",
+            }}
             alt="dark theme sample"
             src="https://hashnode-blog-cards.vercel.app/api/getHashnodeBlog?url=https://townhall.hashnode.com/announcing-hashnode-hackathon-powered-by-vercel&theme=dark&large=true"
           />
@@ -237,6 +247,11 @@ export default function Home() {
             <span className={styles.greyBg}>blue</span> in th GET Request
           </p>
           <img
+            style={{
+              borderRadius: "6px",
+              boxShadow:
+                "0 0 0 1px rgb(53 72 91 / 10%), 0 2px 2px rgb(0 0 0 / 3%), 0 4px 4px rgb(0 0 0 / 4%), 0 10px 8px rgb(0 0 0 / 5%), 0 15px 15px rgb(0 0 0 / 6%), 0 30px 30px rgb(0 0 0 / 7%), 0 70px 65px rgb(0 0 0 / 9%)",
+            }}
             alt="blue theme sample"
             src="https://hashnode-blog-cards.vercel.app/api/getHashnodeBlog?url=https://townhall.hashnode.com/announcing-hashnode-hackathon-powered-by-vercel&theme=blue&large=true"
           />
