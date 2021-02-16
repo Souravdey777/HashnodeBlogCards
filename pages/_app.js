@@ -82,7 +82,10 @@ function HashnodeBlogCard({ Component, pageProps }) {
                 target="_blank"
                 rel="noreferrer"
               >
-                ⚡️ Ask for a feature
+                <span role="img" aria-label="fire">
+                  ⚡️
+                </span>{" "}
+                Ask for a feature
               </a>
             </div>
             <div>
@@ -91,7 +94,10 @@ function HashnodeBlogCard({ Component, pageProps }) {
                 target="_blank"
                 rel="noreferrer"
               >
-                🎨 Ask for a theme
+                <span role="img" aria-label="fire">
+                  🎨
+                </span>{" "}
+                Ask for a theme
               </a>
             </div>
             <div>
@@ -100,7 +106,10 @@ function HashnodeBlogCard({ Component, pageProps }) {
                 target="_blank"
                 rel="noreferrer"
               >
-                🚑 Report an Issue
+                <span role="img" aria-label="fire">
+                  🚑
+                </span>{" "}
+                Report an Issue
               </a>
             </div>
 
@@ -110,7 +119,10 @@ function HashnodeBlogCard({ Component, pageProps }) {
                 target="_blank"
                 rel="noreferrer"
               >
-                📄 MIT Licence
+                <span role="img" aria-label="fire">
+                  📄
+                </span>{" "}
+                MIT Licence
               </a>
             </div>
           </div>
