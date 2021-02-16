@@ -67,13 +67,22 @@ function HashnodeBlogCard({ Component, pageProps }) {
             </div>
           </div>
           <div className="footer_upper_col">
+            <p
+              style={{
+                margin: "0.5rem 0rem",
+                fontWeight: "bold",
+                fontSize: "1rem",
+              }}
+            >
+              Important Links
+            </p>
             <div>
               <a
                 href="https://github.com/Souravdey777/HashnodeBlogCards/discussions/"
                 target="_blank"
                 rel="noreferrer"
               >
-                Ask for a feature
+                ⚡️ Ask for a feature
               </a>
             </div>
             <div>
@@ -82,7 +91,7 @@ function HashnodeBlogCard({ Component, pageProps }) {
                 target="_blank"
                 rel="noreferrer"
               >
-                Ask for a theme
+                🎨 Ask for a theme
               </a>
             </div>
             <div>
@@ -91,7 +100,7 @@ function HashnodeBlogCard({ Component, pageProps }) {
                 target="_blank"
                 rel="noreferrer"
               >
-                Report an Issue
+                🚑 Report an Issue
               </a>
             </div>
 
@@ -101,7 +110,7 @@ function HashnodeBlogCard({ Component, pageProps }) {
                 target="_blank"
                 rel="noreferrer"
               >
-                MIT Licence
+                📄 MIT Licence
               </a>
             </div>
           </div>

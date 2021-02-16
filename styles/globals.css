@@ -41,7 +41,7 @@ button {
 
 .footer_lower {
   background-color: #232326;
-  color: #eaeaea;
+  color: #ffffff;
   padding: 1rem 6rem;
   padding-top: 2rem;
   font-size: 0.9rem;
@@ -58,7 +58,7 @@ button {
 }
 
 .footer_upper {
-  color: #eaeaea;
+  color: #ffffff;
   padding: 2rem 6rem;
   font-size: 0.9rem;
   background-color: #2962ff;
@@ -77,13 +77,14 @@ button {
 }
 
 .footer_upper_col {
-  width: 8rem;
+  width: 12rem;
   font-weight: 400;
 }
 
 .footer_upper_col div {
-  padding: 0.1rem;
-  transition-duration: 0.5s;
+  color: #c1d6ff;
+  padding: 0.2rem 0rem;
+  transition-duration: 0.6s;
   border-radius: 4px;
 }
 
@@ -108,10 +109,8 @@ button {
     text-decoration: underline;
   }
   .footer_upper_col div:hover {
-    background-color: #eaeaea33;
-    color: #232326;
+    color: #ffffff;
   }
-
   .social_icons i:hover,
   .logosvg:hover {
     color: #eaeaea;
@@ -129,9 +128,16 @@ button {
   .footer_lower div {
     padding: 0.2rem 0rem;
   }
+  .footer_upper_col div {
+    color: #eaeaea;
+  }
   .footer_upper_col,
   .footer_upper_col_1 {
     padding: 0.8rem 0rem;
     width: unset;
+  }
+  .social_icons i,
+  .logosvg {
+    color: #eaeaea;
   }
 }
