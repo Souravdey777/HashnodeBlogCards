@@ -3,6 +3,7 @@ import getBase64 from "./datafetcher/getBase64";
 
 const blogCard = async (data, hostname, large = false, theme = "light") => {
   const { title, dateAdded, brief, author, slug } = data;
+  console.log("author.name", author.name);
   const coverImage =
     data.coverImage !== "" ? await getBase64(data.coverImage) : "";
   const profileImage = await getBase64(author.photo);
